@@ -1,46 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Tester(failed)">
+  <test thread-count="5" name="all(failed)">
     <groups>
       <run>
         <include name="all"/>
       </run>
     </groups>
     <classes>
-      <class name="testing.MyAccountTest">
-        <methods>
-          <include name="checkStatusDateDetails"/>
-          <include name="checkViewOrderLink"/>
-          <include name="logoutCheck"/>
-          <include name="editShippingAddressCheck"/>
-          <include name="accountDetailsFunctionCheck"/>
-          <include name="checkDashboardLink1"/>
-          <include name="checkViewOrderLinkDetails"/>
-          <include name="addressFunctionalityCheck"/>
-        </methods>
-      </class> <!-- testing.MyAccountTest -->
-      <class name="testing.RegistrationTest">
-        <methods>
-          <include name="signInTest1"/>
-          <include name="emptyPasswordAndEmptyUserName5"/>
-          <include name="emptyEmailId3"/>
-          <include name="registrationWithInvalidEmailAddress2"/>
-          <include name="emptyPassword4"/>
-        </methods>
-      </class> <!-- testing.RegistrationTest -->
       <class name="testing.LoginTest">
         <methods>
-          <include name="handlesCaseSensitive7"/>
+          <include name="getDriver"/>
           <include name="loginAuthentication8"/>
-          <include name="emptyUserNameAndemptyPassword5"/>
-          <include name="incorrectUserNameAndIncorrectPassword2"/>
-          <include name="correctUserNameAndEmptyPassword3"/>
           <include name="validUserNameAndValidPassword1"/>
-          <include name="passwordShouldBeMasked6"/>
-          <include name="emptyUserNameAndCorrectPassword4"/>
+          <include name="closeDriver"/>
         </methods>
       </class> <!-- testing.LoginTest -->
+      <class name="testing.RegistrationTest">
+        <methods>
+          <include name="getDriver"/>
+          <include name="registrationWithInvalidEmailAddress2"/>
+          <include name="closeDriver"/>
+        </methods>
+      </class> <!-- testing.RegistrationTest -->
     </classes>
-  </test> <!-- Tester(failed) -->
+  </test> <!-- all(failed) -->
 </suite> <!-- Failed suite [Suite] -->

@@ -14,8 +14,10 @@ public class HomePage {
 		PageFactory.initElements(BaseClass.getDriver(), this);
 	}
 	
+	@FindBy (xpath = "//nav[@class='woocommerce-breadcrumb']/a")
+	public WebElement homeMenu;
 	
-
+	
 	@FindBy (xpath = "//*[@id='menu-item-40']")
 	public WebElement shopLink;
 	
@@ -46,8 +48,12 @@ public class HomePage {
 	@FindBy (xpath = "//*[@class='single_add_to_cart_button button alt']")
 	public WebElement addToBasket;
 	
-	@FindBy (xpath = "//*[contains(text(),'Product Description')]")
-	public WebElement productDescription;
+	@FindBy (xpath = "//*[@class='tabs wc-tabs']/li")
+	public WebElement productDescriptionClickable;
+	
+	
+	@FindBy (xpath = "//div[@id='tab-description']/div/div/div/p")
+	public WebElement productDescriptionText;
 	
 	@FindBy (xpath = "//*[@class='tabs wc-tabs']/li[2]")
 	public WebElement reviewsClickable;
@@ -96,7 +102,7 @@ public class HomePage {
 	
 	@FindBy (xpath = "//*[@class='woocommerce-message']")
 	public WebElement baskedUpdateConfirmation;
-
+	
 	@FindBy (xpath = "//*[@class='cart-subtotal']/td/span")
 	public WebElement subtotalAmount;
 	
@@ -111,11 +117,14 @@ public class HomePage {
 	@FindBy (xpath = "//*[@class='product-categories']/li/a")
 	public WebElement androidLink;
 	
-	@FindBy (xpath = "//*[@class='products masonry-done']/li/a/img")
-	public List <WebElement> htmlCategoryBooks;
+	@FindBy (xpath = "//ul[@class='products masonry-done']/li/a/h3")
+	public List <WebElement> bookTitles;
 	
 	@FindBy (xpath = "//*[@class='product-categories']/li[2]/a")
 	public WebElement htmlLink;
+	
+	@FindBy (xpath = "//ul[@class='product-categories']/li[3]/a")
+	public WebElement javascriptLink;
 	
 	@FindBy (xpath = "//*[@class='products masonry-done']")
 	public WebElement htmlCategoryWindows;
@@ -129,13 +138,13 @@ public class HomePage {
 	@FindBy (xpath = "//*[@class='products masonry-done']/li/a/img")
 	public List<WebElement> newnessSortCategory;
 	
-	@FindBy (xpath = "//*[@class='products masonry-done']/li[3]/a")
+	@FindBy (xpath = "//ul[@class='products masonry-done']/li[3]/a[2]")
 	public WebElement readMoreButton;
 	
 	@FindBy (xpath = "//*[@class='stock out-of-stock']")
 	public WebElement outOfStock;
 	
-	@FindBy (xpath = "//*[@class='products masonry-done']/li/a")
+	@FindBy (xpath = "//ul[@class='products masonry-done']/li/a/span")
 	public WebElement onSaleProduct;
 	
 	@FindBy (xpath = "//*[@class='price']/del/span")
@@ -143,6 +152,71 @@ public class HomePage {
 	
 	@FindBy (xpath = "//*[@class='price']/ins/span")
 	public WebElement bookOnSaleNewPrice;
+	
+
+	@FindBy (xpath = "//*[@class='price_slider_wrapper']/div/span")
+	public WebElement leftSlider;
+	
+	@FindBy (xpath = "//*[@class='price_slider_wrapper']/div/span[2]")
+	public WebElement rightSlider;
+	
+	@FindBy (xpath = "//*[@class='price_slider_amount']/button")
+	public WebElement filterButton;
+	
+	@FindBy (xpath = "//*[@class='price']/span")
+	public List <WebElement> prices;
+	
+	@FindBy (xpath = "//*[@class='price']/ins/span")
+	public List <WebElement> newPrices;
+	
+	@FindBy (xpath = "//*[@class='from']")
+	public WebElement fromPrice;
+	
+	@FindBy (xpath = "//*[@class='to']")
+	public WebElement toPrice;
+	
+	@FindBy (xpath = "//*[@class='product_title entry-title']")
+	public WebElement bookTitle;
+	
+	@FindBy (xpath = "//ul[@class='products masonry-done']/li/a/img")
+	public List <WebElement> popularBooks;
+	
+	@FindBy (xpath = "//ul[@class='products masonry-done']/li[6]/a[2]")
+	public WebElement addBookToBasket;
+	
+	@FindBy (xpath = "//*[@id='wpmenucartli']")
+	public WebElement cartLinkInMenu;
+	
+	@FindBy (xpath = "//*[@class='tax-rate tax-rate-in-tax-1']/td/span")
+	public WebElement tax;
+	
+	@FindBy (xpath = "//*[@class='tax-rate tax-rate-roaming-tax-1']/td/span")
+	public WebElement roamingTax;
+	
+	@FindBy (xpath = "//div[@class='n2-ss-slider-3']/div")
+	public List <WebElement> sliders;
+	
+	@FindBy (xpath = "//*[@class='products']/li/a/img")
+	public List <WebElement> arrivals;
+	
+	@FindBy (xpath = "//*[@class='woocommerce']/p")
+	public WebElement bookSuccessRemoved;
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
 	

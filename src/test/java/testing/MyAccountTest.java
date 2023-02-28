@@ -1,6 +1,5 @@
 package testing;
 
-import org.testng.AssertJUnit;
 import org.testng.annotations.Test;
 
 import util.BaseClass;
@@ -8,105 +7,94 @@ import util.CommonMethods;
 
 public class MyAccountTest extends CommonMethods{
 
-	@Test(enabled = true, groups = {"myAccount", "all"})
+	@Test(enabled = true, groups = {"myAccount", "all"}, retryAnalyzer = ZRetryAnalyzer.class)
 	public void checkDashboardLink1() {
 		click(hp.myAccountLink);
-		refresh(hp.myAccountLink);
 		sendKey(map.userNameBox, BaseClass.getProperty("validUserName"));
 		sendKey(map.passwordBox, BaseClass.getProperty("validPassword"));
 		click(map.loginButton);
-		AssertJUnit.assertTrue(up.dashboardLink.isDisplayed());
+		assertDisplayed(up.dashboardLink);
 	}
 	
-	@Test(enabled = true, groups = {"myAccount", "all"})
-	public void checkViewOrderLink() {
+	@Test(enabled = true, groups = {"myAccount", "all"}, retryAnalyzer = ZRetryAnalyzer.class)
+	public void checkViewOrderLink2() {
 		click(hp.myAccountLink);
-		refresh(hp.myAccountLink);
 		sendKey(map.userNameBox, BaseClass.getProperty("validUserNameWithOrder"));
 		sendKey(map.passwordBox, BaseClass.getProperty("validPasswordWithOrder"));
 		click(map.loginButton);
-		click(hp.myAccountLink);
 		click(up.ordersLink);
 		click(up.viewLink);
-		AssertJUnit.assertTrue(up.ordersDetailsText.isDisplayed());
+		assertDisplayed(up.ordersDetailsText);
 	}
 	
 	
-	@Test(enabled = true, groups = {"myAccount", "all"})
-	public void checkViewOrderLinkDetails() {
+	@Test(enabled = true, groups = {"myAccount", "all", "myAccount3"}, retryAnalyzer = ZRetryAnalyzer.class)
+	public void checkViewOrderLinkDetails3() {
 		click(hp.myAccountLink);
-		refresh(hp.myAccountLink);
 		sendKey(map.userNameBox, BaseClass.getProperty("validUserNameWithOrder"));
 		sendKey(map.passwordBox, BaseClass.getProperty("validPasswordWithOrder"));
 		click(map.loginButton);
-		click(hp.myAccountLink);
 		click(up.ordersLink);
 		click(up.viewLink);
-		AssertJUnit.assertTrue(up.ordersDetailsText.isDisplayed() && up.billingAddressText.isDisplayed() && up.customerDetailsText.isDisplayed());
+		assertDisplayed(up.ordersDetailsText, up.billingAddressText, up.customerDetailsText);
 	}
 	
-	@Test(enabled = true, groups = {"myAccount", "all"})
-	public void checkStatusDateDetails() {
+	@Test(enabled = true, groups = {"myAccount", "all", "myAccount4"}, retryAnalyzer = ZRetryAnalyzer.class)
+	public void checkStatusDateDetails4() {
 		click(hp.myAccountLink);
-		refresh(hp.myAccountLink);
 		sendKey(map.userNameBox, BaseClass.getProperty("validUserNameWithOrder"));
 		sendKey(map.passwordBox, BaseClass.getProperty("validPasswordWithOrder"));
 		click(map.loginButton);
-		click(hp.myAccountLink);
 		click(up.ordersLink);
 		click(up.viewLink);
-		AssertJUnit.assertTrue(up.orderNumberText.isDisplayed() && up.orderDateText.isDisplayed() && up.orderStatusText.isDisplayed());
+		assertDisplayed(up.orderNumberText, up.orderDateText, up.orderStatusText);
 	}
 	
-	@Test(enabled = true, groups = {"myAccount", "all"})
-	public void addressFunctionalityCheck() {
+	@Test(enabled = true, groups = {"myAccount", "all"}, retryAnalyzer = ZRetryAnalyzer.class)
+	public void addressFunctionalityCheck5() {
 		click(hp.myAccountLink);
-		refresh(hp.myAccountLink);
 		sendKey(map.userNameBox, BaseClass.getProperty("validUserNameWithOrder"));
 		sendKey(map.passwordBox, BaseClass.getProperty("validPasswordWithOrder"));
 		click(map.loginButton);
-		click(hp.myAccountLink);
 		click(up.addressLink);
-		AssertJUnit.assertTrue(up.billingAddress.isDisplayed() && up.shippingAddress.isDisplayed());
+		assertDisplayed(up.billingAddress, up.shippingAddress);
 	}
 	
 	
-	@Test(enabled = true, groups = {"myAccount", "all"})
-	public void editShippingAddressCheck() {
+	@Test(enabled = true, groups = {"myAccount", "all"}, retryAnalyzer = ZRetryAnalyzer.class)
+	public void editShippingAddressCheck6() {
 		click(hp.myAccountLink);
-		refresh(hp.myAccountLink);
 		sendKey(map.userNameBox, BaseClass.getProperty("validUserNameWithOrder"));
 		sendKey(map.passwordBox, BaseClass.getProperty("validPasswordWithOrder"));
 		click(map.loginButton);
 		click(hp.myAccountLink);
 		click(up.addressLink);
 		click(up.shippingAddressEditButton);
-		AssertJUnit.assertTrue(up.saveAddressButton.isDisplayed());
+		assertDisplayed(up.saveAddressButton);
 	}
 	
-	@Test(enabled = true, groups = {"myAccount", "all"})
-	public void accountDetailsFunctionCheck() {
+	@Test(enabled = true, groups = {"myAccount", "all"}, retryAnalyzer = ZRetryAnalyzer.class)
+	public void accountDetailsFunctionCheck7() {
 		click(hp.myAccountLink);
-		refresh(hp.myAccountLink);
 		sendKey(map.userNameBox, BaseClass.getProperty("validUserNameWithOrder"));
 		sendKey(map.passwordBox, BaseClass.getProperty("validPasswordWithOrder"));
 		click(map.loginButton);
-		click(hp.myAccountLink);
 		click(up.accountDetails);
-		AssertJUnit.assertTrue(up.changePasswordBox.isDisplayed());
+		assertDisplayed(up.changePasswordBox);
 	}
 	
-	@Test(enabled = true, groups = {"myAccount", "all"})
-	public void logoutCheck() {
+	@Test(enabled = true, groups = {"myAccount", "all"}, retryAnalyzer = ZRetryAnalyzer.class)
+	public void logoutCheck8() {
 		click(hp.myAccountLink);
-		refresh(hp.myAccountLink);
 		sendKey(map.userNameBox, BaseClass.getProperty("validUserNameWithOrder"));
 		sendKey(map.passwordBox, BaseClass.getProperty("validPasswordWithOrder"));
 		click(map.loginButton);
-		click(hp.myAccountLink);
 		click(up.logoutLink);
-		AssertJUnit.assertTrue(map.userNameBox.isDisplayed());
+		assertDisplayed(map.userNameBox);
 	}
+	
+	
+	
 	
 	
 	

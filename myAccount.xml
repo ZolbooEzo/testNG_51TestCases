@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	
+	
+  <test thread-count="5" name="Test1">
+    <classes>
+      <class name="testing.MyAccountTest"/>
+    </classes>
+  </test> <!-- Test -->
+  
+   <test thread-count="5" name="Test2">
+    <classes>
+      <class name="testing.MyAccountTest"/>
+    </classes>
+  </test> <!-- Test -->
+  
+   <test thread-count="5" name="Test3">
+    <classes>
+      <class name="testing.MyAccountTest"/>
+    </classes>
+  </test> <!-- Test -->
+  
+   <test thread-count="5" name="Tes4t">
+    <classes>
+      <class name="testing.MyAccountTest"/>
+    </classes>
+  </test> <!-- Test -->
+  
+   <test thread-count="5" name="Test5">
+    <classes>
+      <class name="testing.MyAccountTest"/>
+    </classes>
+  </test> <!-- Test -->
+  
+   <test thread-count="5" name="Test6">
+    <classes>
+      <class name="testing.MyAccountTest"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  
+  
+</suite> <!-- Suite -->

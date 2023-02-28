@@ -47,13 +47,13 @@ public class CheckoutPage {
 	@FindBy (id = "s2id_autogen2_search")
 	public WebElement stateSearchBox;
 	
-	@FindBy (xpath = "//*[contains(text(),'Billing Details')]")
+	@FindBy (xpath = "//div[@class='woocommerce-billing-fields']/h3")
 	public WebElement billingDetails;
 
-	@FindBy (xpath = "//*[contains(text(),'Additional Information')]")
+	@FindBy (xpath = "//div[@class='woocommerce-shipping-fields']/h3")
 	public WebElement additionalInfo;
 	
-	@FindBy (xpath = "//*[contains(text(),'Your order')]")
+	@FindBy (xpath = "//*[@id='order_review_heading']")
 	public WebElement yourOrderInfo;
 	
 	@FindBy (xpath = "//*[@name='billing_postcode']")
@@ -64,6 +64,36 @@ public class CheckoutPage {
 	
 	@FindBy (xpath = "//*[@id='page-35']/div/div/ul/li[1]")
 	public WebElement orderConfirmationNumber;
+	
+	@FindBy (xpath = "//input[@id='payment_method_cod']")
+	public WebElement cashOnDelivery;
+	
+	@FindBy (xpath = "//*[@class='wc-bacs-bank-details-heading']")
+	public WebElement ourBankDetails;
+	
+	@FindBy (xpath = "//table[@class='shop_table order_details']")
+	public WebElement finalOrderDetails;
+	
+			
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
 }

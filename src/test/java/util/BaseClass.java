@@ -2,7 +2,6 @@ package util;
 
 import java.io.FileInputStream;
 import java.util.Properties;
-import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -18,7 +17,7 @@ public class BaseClass {
 	private static WebDriver driver;
 	private static Properties pro;
 	
-	@BeforeMethod
+	@BeforeMethod(alwaysRun = true)
 	public static WebDriver getDriver() {
 		
 		if(driver == null) {
@@ -42,16 +41,14 @@ public class BaseClass {
 			
 			driver.manage().window().maximize();
 			driver.get(BaseClass.getProperty("baseUrl"));
-			driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 			PageInitializer.initialize();
 		}
 		return driver;
 	}
 	
-	@AfterMethod
+	@AfterMethod(alwaysRun = true)
 	public static void closeDriver() {
 		if(driver != null) {
-			driver.close();
 			driver.quit();
 			driver = null;
 		}

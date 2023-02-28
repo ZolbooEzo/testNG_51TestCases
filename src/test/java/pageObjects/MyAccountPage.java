@@ -30,16 +30,14 @@ public class MyAccountPage {
 	@FindBy(xpath = "//*[@name='register']")
 	public WebElement registerButton;
 	
-	@FindBy (xpath = "//*[contains(text(),' Please provide a valid email address.')]")
-	public WebElement invalidEmailError;
+	@FindBy (xpath = "//*[contains(text(),'Please provide a valid email address.')]")
+	public WebElement pleaseProvideValidEmaillError;
 	
 	@FindBy (xpath = "//*[contains(text(),'Username is required')]")
 	public WebElement userNameRequiredError;
 	
-	@FindBy (xpath = "//*[contains(text(),' Please enter an account password.')]")
+	@FindBy (xpath = "//*[contains(text(),'Please enter an account password.')]")
 	public WebElement pleaseEnterPasswordError;
 	
-	@FindBy (xpath = "//*[contains(text(),' Please provide a valid email address.')]")
-	public WebElement pleaseProvideValidPasswordError;
 	
 }
