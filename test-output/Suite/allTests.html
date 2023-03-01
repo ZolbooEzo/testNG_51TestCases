@@ -1,0 +1,305 @@
+<html>
+<head>
+<title>TestNG:  allTests</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>allTests</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>45/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Feb 28 19:08:48 EST 2023</td>
+</tr>
+<tr><td>Total time:</td><td>587 seconds (587325 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td>all </td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testing.MyAccountTest.checkViewOrderLink2()'><b>checkViewOrderLink2</b><br>Test class: testing.MyAccountTest</td>
+<td></td>
+<td>7</td>
+<td>testing.MyAccountTest@54a7079e</td></tr>
+<tr>
+<td title='testing.HomePageTest.threeArrivalsOnly2()'><b>threeArrivalsOnly2</b><br>Test class: testing.HomePageTest</td>
+<td></td>
+<td>20</td>
+<td>testing.HomePageTest@3012646b</td></tr>
+<tr>
+<td title='testing.ShopTest.checkPriceRange2()'><b>checkPriceRange2</b><br>Test class: testing.ShopTest</td>
+<td></td>
+<td>4</td>
+<td>testing.ShopTest@7b36aa0c</td></tr>
+<tr>
+<td title='testing.MyAccountTest.accountDetailsFunctionCheck7()'><b>accountDetailsFunctionCheck7</b><br>Test class: testing.MyAccountTest</td>
+<td></td>
+<td>5</td>
+<td>testing.MyAccountTest@54a7079e</td></tr>
+<tr>
+<td title='testing.HomePageTest.checkOverLoadedOrder7()'><b>checkOverLoadedOrder7</b><br>Test class: testing.HomePageTest</td>
+<td></td>
+<td>5</td>
+<td>testing.HomePageTest@3012646b</td></tr>
+<tr>
+<td title='testing.LoginTest.incorrectUserNameAndIncorrectPassword2()'><b>incorrectUserNameAndIncorrectPassword2</b><br>Test class: testing.LoginTest</td>
+<td></td>
+<td>3</td>
+<td>testing.LoginTest@4a883b15</td></tr>
+<tr>
+<td title='testing.ShopTest.sortByDate5()'><b>sortByDate5</b><br>Test class: testing.ShopTest</td>
+<td></td>
+<td>5</td>
+<td>testing.ShopTest@7b36aa0c</td></tr>
+<tr>
+<td title='testing.RegistrationTest.emptyPassword4()'><b>emptyPassword4</b><br>Test class: testing.RegistrationTest</td>
+<td></td>
+<td>3</td>
+<td>testing.RegistrationTest@25641d39</td></tr>
+<tr>
+<td title='testing.HomePageTest.couponApplyLessThan450()'><b>couponApplyLessThan450</b><br>Test class: testing.HomePageTest</td>
+<td></td>
+<td>8</td>
+<td>testing.HomePageTest@3012646b</td></tr>
+<tr>
+<td title='testing.HomePageTest.addToBasket()'><b>addToBasket</b><br>Test class: testing.HomePageTest</td>
+<td></td>
+<td>9</td>
+<td>testing.HomePageTest@3012646b</td></tr>
+<tr>
+<td title='testing.LoginTest.correctUserNameAndEmptyPassword3()'><b>correctUserNameAndEmptyPassword3</b><br>Test class: testing.LoginTest</td>
+<td></td>
+<td>4</td>
+<td>testing.LoginTest@4a883b15</td></tr>
+<tr>
+<td title='testing.LoginTest.passwordShouldBeMasked6()'><b>passwordShouldBeMasked6</b><br>Test class: testing.LoginTest</td>
+<td></td>
+<td>2</td>
+<td>testing.LoginTest@4a883b15</td></tr>
+<tr>
+<td title='testing.HomePageTest.arrivalImageReview()'><b>arrivalImageReview</b><br>Test class: testing.HomePageTest</td>
+<td></td>
+<td>8</td>
+<td>testing.HomePageTest@3012646b</td></tr>
+<tr>
+<td title='testing.HomePageTest.arrivalsImageDescription4()'><b>arrivalsImageDescription4</b><br>Test class: testing.HomePageTest</td>
+<td></td>
+<td>1</td>
+<td>testing.HomePageTest@3012646b</td></tr>
+<tr>
+<td title='testing.HomePageTest.threeSlidersOnly1()'><b>threeSlidersOnly1</b><br>Test class: testing.HomePageTest</td>
+<td></td>
+<td>3</td>
+<td>testing.HomePageTest@3012646b</td></tr>
+<tr>
+<td title='testing.MyAccountTest.checkStatusDateDetails4()'><b>checkStatusDateDetails4</b><br>Test class: testing.MyAccountTest</td>
+<td></td>
+<td>8</td>
+<td>testing.MyAccountTest@54a7079e</td></tr>
+<tr>
+<td title='testing.ShopTest.saleFunctionality8()'><b>saleFunctionality8</b><br>Test class: testing.ShopTest</td>
+<td></td>
+<td>5</td>
+<td>testing.ShopTest@7b36aa0c</td></tr>
+<tr>
+<td title='testing.ShopTest.highToLow6()'><b>highToLow6</b><br>Test class: testing.ShopTest</td>
+<td></td>
+<td>4</td>
+<td>testing.ShopTest@7b36aa0c</td></tr>
+<tr>
+<td title='testing.ShopTest.sortByAverage4()'><b>sortByAverage4</b><br>Test class: testing.ShopTest</td>
+<td></td>
+<td>4</td>
+<td>testing.ShopTest@7b36aa0c</td></tr>
+<tr>
+<td title='testing.MyAccountTest.checkViewOrderLinkDetails3()'><b>checkViewOrderLinkDetails3</b><br>Test class: testing.MyAccountTest</td>
+<td></td>
+<td>7</td>
+<td>testing.MyAccountTest@54a7079e</td></tr>
+<tr>
+<td title='testing.RegistrationTest.registrationWithInvalidEmailAddress2()'><b>registrationWithInvalidEmailAddress2</b><br>Test class: testing.RegistrationTest</td>
+<td></td>
+<td>4</td>
+<td>testing.RegistrationTest@25641d39</td></tr>
+<tr>
+<td title='testing.LoginTest.loginAuthentication8()'><b>loginAuthentication8</b><br>Test class: testing.LoginTest</td>
+<td></td>
+<td>9</td>
+<td>testing.LoginTest@4a883b15</td></tr>
+<tr>
+<td title='testing.MyAccountTest.editShippingAddressCheck6()'><b>editShippingAddressCheck6</b><br>Test class: testing.MyAccountTest</td>
+<td></td>
+<td>20</td>
+<td>testing.MyAccountTest@54a7079e</td></tr>
+<tr>
+<td title='testing.HomePageTest.arrivalsShouldNavigate3()'><b>arrivalsShouldNavigate3</b><br>Test class: testing.HomePageTest</td>
+<td></td>
+<td>10</td>
+<td>testing.HomePageTest@3012646b</td></tr>
+<tr>
+<td title='testing.ShopTest.sortByPopularity3()'><b>sortByPopularity3</b><br>Test class: testing.ShopTest</td>
+<td></td>
+<td>4</td>
+<td>testing.ShopTest@7b36aa0c</td></tr>
+<tr>
+<td title='testing.RegistrationTest.emptyPasswordAndEmptyUserName5()'><b>emptyPasswordAndEmptyUserName5</b><br>Test class: testing.RegistrationTest</td>
+<td></td>
+<td>4</td>
+<td>testing.RegistrationTest@25641d39</td></tr>
+<tr>
+<td title='testing.ShopTest.baskedFunctionality9()'><b>baskedFunctionality9</b><br>Test class: testing.ShopTest</td>
+<td></td>
+<td>14</td>
+<td>testing.ShopTest@7b36aa0c</td></tr>
+<tr>
+<td title='testing.HomePageTest.updatebasket()'><b>updatebasket</b><br>Test class: testing.HomePageTest</td>
+<td></td>
+<td>6</td>
+<td>testing.HomePageTest@3012646b</td></tr>
+<tr>
+<td title='testing.HomePageTest.checkOutTitle()'><b>checkOutTitle</b><br>Test class: testing.HomePageTest</td>
+<td></td>
+<td>9</td>
+<td>testing.HomePageTest@3012646b</td></tr>
+<tr>
+<td title='testing.MyAccountTest.addressFunctionalityCheck5()'><b>addressFunctionalityCheck5</b><br>Test class: testing.MyAccountTest</td>
+<td></td>
+<td>6</td>
+<td>testing.MyAccountTest@54a7079e</td></tr>
+<tr>
+<td title='testing.HomePageTest.couponApply()'><b>couponApply</b><br>Test class: testing.HomePageTest</td>
+<td></td>
+<td>8</td>
+<td>testing.HomePageTest@3012646b</td></tr>
+<tr>
+<td title='testing.ShopTest.readMoreFunctionality7()'><b>readMoreFunctionality7</b><br>Test class: testing.ShopTest</td>
+<td></td>
+<td>4</td>
+<td>testing.ShopTest@7b36aa0c</td></tr>
+<tr>
+<td title='testing.RegistrationTest.emptyEmailId3()'><b>emptyEmailId3</b><br>Test class: testing.RegistrationTest</td>
+<td></td>
+<td>5</td>
+<td>testing.RegistrationTest@25641d39</td></tr>
+<tr>
+<td title='testing.ShopTest.calculateTaxRate11()'><b>calculateTaxRate11</b><br>Test class: testing.ShopTest</td>
+<td></td>
+<td>9</td>
+<td>testing.ShopTest@7b36aa0c</td></tr>
+<tr>
+<td title='testing.HomePageTest.checkTotalAtCheckoutPage()'><b>checkTotalAtCheckoutPage</b><br>Test class: testing.HomePageTest</td>
+<td></td>
+<td>9</td>
+<td>testing.HomePageTest@3012646b</td></tr>
+<tr>
+<td title='testing.LoginTest.emptyUserNameAndCorrectPassword4()'><b>emptyUserNameAndCorrectPassword4</b><br>Test class: testing.LoginTest</td>
+<td></td>
+<td>3</td>
+<td>testing.LoginTest@4a883b15</td></tr>
+<tr>
+<td title='testing.RegistrationTest.signInTest1()'><b>signInTest1</b><br>Test class: testing.RegistrationTest</td>
+<td></td>
+<td>5</td>
+<td>testing.RegistrationTest@25641d39</td></tr>
+<tr>
+<td title='testing.ShopTest.filterByPriceFinctionality1()'><b>filterByPriceFinctionality1</b><br>Test class: testing.ShopTest</td>
+<td></td>
+<td>5</td>
+<td>testing.ShopTest@7b36aa0c</td></tr>
+<tr>
+<td title='testing.MyAccountTest.checkDashboardLink1()'><b>checkDashboardLink1</b><br>Test class: testing.MyAccountTest</td>
+<td></td>
+<td>4</td>
+<td>testing.MyAccountTest@54a7079e</td></tr>
+<tr>
+<td title='testing.HomePageTest.removeItem()'><b>removeItem</b><br>Test class: testing.HomePageTest</td>
+<td></td>
+<td>7</td>
+<td>testing.HomePageTest@3012646b</td></tr>
+<tr>
+<td title='testing.LoginTest.emptyUserNameAndemptyPassword5()'><b>emptyUserNameAndemptyPassword5</b><br>Test class: testing.LoginTest</td>
+<td></td>
+<td>4</td>
+<td>testing.LoginTest@4a883b15</td></tr>
+<tr>
+<td title='testing.MyAccountTest.logoutCheck8()'><b>logoutCheck8</b><br>Test class: testing.MyAccountTest</td>
+<td></td>
+<td>6</td>
+<td>testing.MyAccountTest@54a7079e</td></tr>
+<tr>
+<td title='testing.LoginTest.handlesCaseSensitive7()'><b>handlesCaseSensitive7</b><br>Test class: testing.LoginTest</td>
+<td></td>
+<td>3</td>
+<td>testing.LoginTest@4a883b15</td></tr>
+<tr>
+<td title='testing.LoginTest.validUserNameAndValidPassword1()'><b>validUserNameAndValidPassword1</b><br>Test class: testing.LoginTest</td>
+<td></td>
+<td>4</td>
+<td>testing.LoginTest@4a883b15</td></tr>
+<tr>
+<td title='testing.ShopTest.orderConfirmation10()'><b>orderConfirmation10</b><br>Test class: testing.ShopTest</td>
+<td></td>
+<td>16</td>
+<td>testing.ShopTest@7b36aa0c</td></tr>
+</table><p>
+</body>
+</html>

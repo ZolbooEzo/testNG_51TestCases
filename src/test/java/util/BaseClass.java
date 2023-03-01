@@ -13,81 +13,63 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class BaseClass {
 
-	
 	private static WebDriver driver;
 	private static Properties pro;
-	
+
 	@BeforeMethod(alwaysRun = true)
 	public static WebDriver getDriver() {
-		
-		if(driver == null) {
+
+		if (driver == null) {
 			String browser = BaseClass.getProperty("browser");
-			
-			switch(browser) {
-			
+
+			switch (browser) {
+
 			case "chrome":
 				WebDriverManager.chromedriver().setup();
 				driver = new ChromeDriver();
 				break;
-				
+
 			case "firefox":
 				WebDriverManager.firefoxdriver().setup();
 				driver = new FirefoxDriver();
 				break;
-				
+
 			default:
 				throw new IllegalArgumentException("Please prove correct browser name!");
 			}
-			
+
 			driver.manage().window().maximize();
 			driver.get(BaseClass.getProperty("baseUrl"));
 			PageInitializer.initialize();
 		}
 		return driver;
 	}
-	
+
 	@AfterMethod(alwaysRun = true)
 	public static void closeDriver() {
-		if(driver != null) {
+		if (driver != null) {
 			driver.quit();
 			driver = null;
 		}
 	}
-	
-	
+
 	static {
 		try {
-			
+
 			String filePath = "src/test/resources/files/configurations.properties";
 			FileInputStream fis = new FileInputStream(filePath);
-			
+
 			pro = new Properties();
 			pro.load(fis);
 			fis.close();
-			
-		} catch(Exception e) {
+
+		} catch (Exception e) {
 			e.printStackTrace();
 		}
 	}
-	
-	
+
 	public static String getProperty(String keyName) {
 		return pro.getProperty(keyName);
 	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+
 }
