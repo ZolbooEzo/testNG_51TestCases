@@ -17,4 +17,6 @@
       <class name="testing.ShopTest"/>
     </classes>
   </test> <!-- Test -->
+  
+  
 </suite> <!-- Suite -->

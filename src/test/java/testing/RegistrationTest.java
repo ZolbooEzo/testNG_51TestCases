@@ -10,34 +10,24 @@ public class RegistrationTest extends CommonMethods{
 	
 	@Test(enabled = true, groups = {"registration", "all", "registration1"}, retryAnalyzer = ZRetryAnalyzer.class) // need to figure out a way to see password strength without sending password twice
 	public void signInTest1() {
-		click(hp.myAccountLink);
-		sendKey(map.registerUserNameBox, mailGenerator());
-		sendKeyPassword(map.registerPasswordBox, BaseClass.getProperty("validPassword"));
-		click(map.registerButton);
+		map.doRegistration(mailGenerator(), BaseClass.getProperty("validPassword"));
 		assertDisplayed(up.signOutLink);
 	}
 	
 	@Test(enabled = true, groups = {"registration", "all"}, retryAnalyzer = ZRetryAnalyzer.class)
 	public void registrationWithInvalidEmailAddress2() {
-		click(hp.myAccountLink);
-		sendKey(map.registerUserNameBox, BaseClass.getProperty("falseUserName"));
-		sendKeyPassword(map.registerPasswordBox, BaseClass.getProperty("validPassword"));
-		click(map.registerButton);
+		map.doRegistration(BaseClass.getProperty("falseUserName"), BaseClass.getProperty("validPassword"));
 		assertDisplayed(map.pleaseProvideValidEmaillError);
 	}
 	
 	@Test(enabled = true, groups = {"registration", "all"}, retryAnalyzer = ZRetryAnalyzer.class)
 	public void emptyEmailId3() {
-		click(hp.myAccountLink);
-		sendKeyPassword(map.registerPasswordBox, BaseClass.getProperty("validPassword"));
-		click(map.registerButton);
+		map.fillPasswordRegistration(BaseClass.getProperty("validPassword"));
 		assertDisplayed(map.pleaseProvideValidEmaillError);
 	}
 	@Test(enabled = true, groups = {"registration", "all"}, retryAnalyzer = ZRetryAnalyzer.class)
 	public void emptyPassword4() {
-		click(hp.myAccountLink);
-		sendKey(map.registerUserNameBox, mailGenerator());
-		click(map.registerButton);
+		map.fillUserNameRegistration(mailGenerator());
 		assertDisplayed(map.pleaseEnterPasswordError);
 	}
 	

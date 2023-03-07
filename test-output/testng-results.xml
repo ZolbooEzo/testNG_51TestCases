@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="45" passed="45" failed="0" skipped="0">
+<testng-results retried="1" ignored="0" total="46" passed="45" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-02-28T19:08:48 EST" name="Suite" finished-at="2023-02-28T19:18:36 EST" duration-ms="587325">
+  <suite started-at="2023-03-01T19:05:03 EST" name="Suite" finished-at="2023-03-01T19:15:30 EST" duration-ms="626450">
     <groups>
       <group name="homePage3">
         <method signature="HomePageTest.arrivalsShouldNavigate3()[pri:0, instance:testing.HomePageTest@3012646b]" name="arrivalsShouldNavigate3" class="testing.HomePageTest"/>
@@ -76,6 +76,9 @@
       <group name="shop7">
         <method signature="ShopTest.readMoreFunctionality7()[pri:0, instance:testing.ShopTest@7b36aa0c]" name="readMoreFunctionality7" class="testing.ShopTest"/>
       </group> <!-- shop7 -->
+      <group name="myAccount2">
+        <method signature="MyAccountTest.checkViewOrderLink2()[pri:0, instance:testing.MyAccountTest@54a7079e]" name="checkViewOrderLink2" class="testing.MyAccountTest"/>
+      </group> <!-- myAccount2 -->
       <group name="shop9">
         <method signature="ShopTest.baskedFunctionality9()[pri:0, instance:testing.ShopTest@7b36aa0c]" name="baskedFunctionality9" class="testing.ShopTest"/>
       </group> <!-- shop9 -->
@@ -119,6 +122,9 @@
       <group name="login8">
         <method signature="LoginTest.loginAuthentication8()[pri:0, instance:testing.LoginTest@4a883b15]" name="loginAuthentication8" class="testing.LoginTest"/>
       </group> <!-- login8 -->
+      <group name="login7">
+        <method signature="LoginTest.handlesCaseSensitive7()[pri:0, instance:testing.LoginTest@4a883b15]" name="handlesCaseSensitive7" class="testing.LoginTest"/>
+      </group> <!-- login7 -->
       <group name="registration">
         <method signature="RegistrationTest.emptyEmailId3()[pri:0, instance:testing.RegistrationTest@25641d39]" name="emptyEmailId3" class="testing.RegistrationTest"/>
         <method signature="RegistrationTest.emptyPassword4()[pri:0, instance:testing.RegistrationTest@25641d39]" name="emptyPassword4" class="testing.RegistrationTest"/>
@@ -139,6 +145,9 @@
         <method signature="MyAccountTest.editShippingAddressCheck6()[pri:0, instance:testing.MyAccountTest@54a7079e]" name="editShippingAddressCheck6" class="testing.MyAccountTest"/>
         <method signature="MyAccountTest.logoutCheck8()[pri:0, instance:testing.MyAccountTest@54a7079e]" name="logoutCheck8" class="testing.MyAccountTest"/>
       </group> <!-- myAccount -->
+      <group name="login2">
+        <method signature="LoginTest.incorrectUserNameAndIncorrectPassword2()[pri:0, instance:testing.LoginTest@4a883b15]" name="incorrectUserNameAndIncorrectPassword2" class="testing.LoginTest"/>
+      </group> <!-- login2 -->
       <group name="shop10">
         <method signature="ShopTest.orderConfirmation10()[pri:0, instance:testing.ShopTest@7b36aa0c]" name="orderConfirmation10" class="testing.ShopTest"/>
       </group> <!-- shop10 -->
@@ -146,553 +155,639 @@
         <method signature="LoginTest.validUserNameAndValidPassword1()[pri:0, instance:testing.LoginTest@4a883b15]" name="validUserNameAndValidPassword1" class="testing.LoginTest"/>
       </group> <!-- login1 -->
     </groups>
-    <test started-at="2023-02-28T19:08:48 EST" name="allTests" finished-at="2023-02-28T19:18:36 EST" duration-ms="587325">
+    <test started-at="2023-03-01T19:05:03 EST" name="allTests" finished-at="2023-03-01T19:15:30 EST" duration-ms="626450">
       <class name="testing.HomePageTest">
-        <test-method is-config="true" signature="getDriver()[pri:0, instance:testing.HomePageTest@3012646b]" started-at="2023-02-28T19:10:43 EST" name="getDriver" finished-at="2023-02-28T19:10:48 EST" duration-ms="5114" status="PASS">
+        <test-method is-config="true" signature="getDriver()[pri:0, instance:testing.HomePageTest@3012646b]" started-at="2023-03-01T19:07:01 EST" name="getDriver" finished-at="2023-03-01T19:07:06 EST" duration-ms="4953" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getDriver -->
-        <test-method signature="addToBasket()[pri:0, instance:testing.HomePageTest@3012646b]" started-at="2023-02-28T19:10:48 EST" name="addToBasket" finished-at="2023-02-28T19:10:57 EST" duration-ms="9138" status="PASS">
+        <test-method signature="addToBasket()[pri:0, instance:testing.HomePageTest@3012646b]" started-at="2023-03-01T19:07:06 EST" name="addToBasket" finished-at="2023-03-01T19:07:22 EST" duration-ms="15886" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addToBasket -->
-        <test-method is-config="true" signature="closeDriver()[pri:0, instance:testing.HomePageTest@3012646b]" started-at="2023-02-28T19:10:57 EST" name="closeDriver" finished-at="2023-02-28T19:10:58 EST" duration-ms="749" status="PASS">
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:testing.HomePageTest@3012646b]" started-at="2023-03-01T19:07:22 EST" name="closeDriver" finished-at="2023-03-01T19:07:22 EST" duration-ms="729" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeDriver -->
-        <test-method is-config="true" signature="getDriver()[pri:0, instance:testing.HomePageTest@3012646b]" started-at="2023-02-28T19:10:58 EST" name="getDriver" finished-at="2023-02-28T19:11:03 EST" duration-ms="4826" status="PASS">
+        <test-method is-config="true" signature="getDriver()[pri:0, instance:testing.HomePageTest@3012646b]" started-at="2023-03-01T19:07:22 EST" name="getDriver" finished-at="2023-03-01T19:07:27 EST" duration-ms="4707" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getDriver -->
-        <test-method signature="arrivalImageReview()[pri:0, instance:testing.HomePageTest@3012646b]" started-at="2023-02-28T19:11:03 EST" name="arrivalImageReview" finished-at="2023-02-28T19:11:11 EST" duration-ms="8162" status="PASS">
+        <test-method signature="arrivalImageReview()[pri:0, instance:testing.HomePageTest@3012646b]" started-at="2023-03-01T19:07:27 EST" name="arrivalImageReview" finished-at="2023-03-01T19:07:33 EST" duration-ms="5523" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- arrivalImageReview -->
-        <test-method is-config="true" signature="closeDriver()[pri:0, instance:testing.HomePageTest@3012646b]" started-at="2023-02-28T19:11:11 EST" name="closeDriver" finished-at="2023-02-28T19:11:11 EST" duration-ms="640" status="PASS">
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:testing.HomePageTest@3012646b]" started-at="2023-03-01T19:07:33 EST" name="closeDriver" finished-at="2023-03-01T19:07:33 EST" duration-ms="629" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeDriver -->
-        <test-method is-config="true" signature="getDriver()[pri:0, instance:testing.HomePageTest@3012646b]" started-at="2023-02-28T19:11:11 EST" name="getDriver" finished-at="2023-02-28T19:11:16 EST" duration-ms="4962" status="PASS">
+        <test-method is-config="true" signature="getDriver()[pri:0, instance:testing.HomePageTest@3012646b]" started-at="2023-03-01T19:07:33 EST" name="getDriver" finished-at="2023-03-01T19:07:38 EST" duration-ms="4859" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getDriver -->
-        <test-method signature="arrivalsImageDescription4()[pri:0, instance:testing.HomePageTest@3012646b]" started-at="2023-02-28T19:11:16 EST" name="arrivalsImageDescription4" finished-at="2023-02-28T19:11:18 EST" duration-ms="1760" status="PASS">
+        <test-method signature="arrivalsImageDescription4()[pri:0, instance:testing.HomePageTest@3012646b]" started-at="2023-03-01T19:07:38 EST" name="arrivalsImageDescription4" finished-at="2023-03-01T19:07:41 EST" duration-ms="3107" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- arrivalsImageDescription4 -->
-        <test-method is-config="true" signature="closeDriver()[pri:0, instance:testing.HomePageTest@3012646b]" started-at="2023-02-28T19:11:18 EST" name="closeDriver" finished-at="2023-02-28T19:11:19 EST" duration-ms="588" status="PASS">
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:testing.HomePageTest@3012646b]" started-at="2023-03-01T19:07:41 EST" name="closeDriver" finished-at="2023-03-01T19:07:42 EST" duration-ms="633" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeDriver -->
-        <test-method is-config="true" signature="getDriver()[pri:0, instance:testing.HomePageTest@3012646b]" started-at="2023-02-28T19:11:19 EST" name="getDriver" finished-at="2023-02-28T19:11:24 EST" duration-ms="4891" status="PASS">
+        <test-method is-config="true" signature="getDriver()[pri:0, instance:testing.HomePageTest@3012646b]" started-at="2023-03-01T19:07:42 EST" name="getDriver" finished-at="2023-03-01T19:07:47 EST" duration-ms="5046" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getDriver -->
-        <test-method signature="arrivalsShouldNavigate3()[pri:0, instance:testing.HomePageTest@3012646b]" started-at="2023-02-28T19:11:24 EST" name="arrivalsShouldNavigate3" finished-at="2023-02-28T19:11:34 EST" duration-ms="10625" status="PASS">
+        <test-method signature="arrivalsShouldNavigate3()[pri:0, instance:testing.HomePageTest@3012646b]" started-at="2023-03-01T19:07:47 EST" name="arrivalsShouldNavigate3" finished-at="2023-03-01T19:07:59 EST" duration-ms="12222" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- arrivalsShouldNavigate3 -->
-        <test-method is-config="true" signature="closeDriver()[pri:0, instance:testing.HomePageTest@3012646b]" started-at="2023-02-28T19:11:34 EST" name="closeDriver" finished-at="2023-02-28T19:11:35 EST" duration-ms="916" status="PASS">
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:testing.HomePageTest@3012646b]" started-at="2023-03-01T19:07:59 EST" name="closeDriver" finished-at="2023-03-01T19:08:00 EST" duration-ms="713" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeDriver -->
-        <test-method is-config="true" signature="getDriver()[pri:0, instance:testing.HomePageTest@3012646b]" started-at="2023-02-28T19:11:35 EST" name="getDriver" finished-at="2023-02-28T19:11:40 EST" duration-ms="4847" status="PASS">
+        <test-method is-config="true" signature="getDriver()[pri:0, instance:testing.HomePageTest@3012646b]" started-at="2023-03-01T19:08:00 EST" name="getDriver" finished-at="2023-03-01T19:08:05 EST" duration-ms="4671" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getDriver -->
-        <test-method signature="checkOutTitle()[pri:0, instance:testing.HomePageTest@3012646b]" started-at="2023-02-28T19:11:40 EST" name="checkOutTitle" finished-at="2023-02-28T19:11:50 EST" duration-ms="9573" status="PASS">
+        <test-method signature="checkOutTitle()[pri:0, instance:testing.HomePageTest@3012646b]" started-at="2023-03-01T19:08:05 EST" name="checkOutTitle" finished-at="2023-03-01T19:08:13 EST" duration-ms="8667" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkOutTitle -->
-        <test-method is-config="true" signature="closeDriver()[pri:0, instance:testing.HomePageTest@3012646b]" started-at="2023-02-28T19:11:50 EST" name="closeDriver" finished-at="2023-02-28T19:11:50 EST" duration-ms="684" status="PASS">
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:testing.HomePageTest@3012646b]" started-at="2023-03-01T19:08:13 EST" name="closeDriver" finished-at="2023-03-01T19:08:14 EST" duration-ms="616" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeDriver -->
-        <test-method is-config="true" signature="getDriver()[pri:0, instance:testing.HomePageTest@3012646b]" started-at="2023-02-28T19:11:50 EST" name="getDriver" finished-at="2023-02-28T19:11:55 EST" duration-ms="5205" status="PASS">
+        <test-method is-config="true" signature="getDriver()[pri:0, instance:testing.HomePageTest@3012646b]" started-at="2023-03-01T19:08:14 EST" name="getDriver" finished-at="2023-03-01T19:08:19 EST" duration-ms="4809" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getDriver -->
-        <test-method signature="checkOverLoadedOrder7()[pri:0, instance:testing.HomePageTest@3012646b]" started-at="2023-02-28T19:11:55 EST" name="checkOverLoadedOrder7" finished-at="2023-02-28T19:12:01 EST" duration-ms="5552" status="PASS">
+        <test-method signature="checkOverLoadedOrder7()[pri:0, instance:testing.HomePageTest@3012646b]" started-at="2023-03-01T19:08:19 EST" name="checkOverLoadedOrder7" finished-at="2023-03-01T19:08:25 EST" duration-ms="6407" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkOverLoadedOrder7 -->
-        <test-method is-config="true" signature="closeDriver()[pri:0, instance:testing.HomePageTest@3012646b]" started-at="2023-02-28T19:12:01 EST" name="closeDriver" finished-at="2023-02-28T19:12:02 EST" duration-ms="633" status="PASS">
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:testing.HomePageTest@3012646b]" started-at="2023-03-01T19:08:25 EST" name="closeDriver" finished-at="2023-03-01T19:08:26 EST" duration-ms="662" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeDriver -->
-        <test-method is-config="true" signature="getDriver()[pri:0, instance:testing.HomePageTest@3012646b]" started-at="2023-02-28T19:12:02 EST" name="getDriver" finished-at="2023-02-28T19:12:07 EST" duration-ms="5375" status="PASS">
+        <test-method is-config="true" signature="getDriver()[pri:0, instance:testing.HomePageTest@3012646b]" started-at="2023-03-01T19:08:26 EST" name="getDriver" finished-at="2023-03-01T19:08:30 EST" duration-ms="4801" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getDriver -->
-        <test-method signature="checkTotalAtCheckoutPage()[pri:0, instance:testing.HomePageTest@3012646b]" started-at="2023-02-28T19:12:07 EST" name="checkTotalAtCheckoutPage" finished-at="2023-02-28T19:12:16 EST" duration-ms="9380" status="PASS">
+        <test-method signature="checkTotalAtCheckoutPage()[pri:0, instance:testing.HomePageTest@3012646b]" started-at="2023-03-01T19:08:30 EST" name="checkTotalAtCheckoutPage" finished-at="2023-03-01T19:08:39 EST" duration-ms="8156" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkTotalAtCheckoutPage -->
-        <test-method is-config="true" signature="closeDriver()[pri:0, instance:testing.HomePageTest@3012646b]" started-at="2023-02-28T19:12:16 EST" name="closeDriver" finished-at="2023-02-28T19:12:17 EST" duration-ms="641" status="PASS">
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:testing.HomePageTest@3012646b]" started-at="2023-03-01T19:08:39 EST" name="closeDriver" finished-at="2023-03-01T19:08:39 EST" duration-ms="760" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeDriver -->
-        <test-method is-config="true" signature="getDriver()[pri:0, instance:testing.HomePageTest@3012646b]" started-at="2023-02-28T19:12:17 EST" name="getDriver" finished-at="2023-02-28T19:12:22 EST" duration-ms="5114" status="PASS">
+        <test-method is-config="true" signature="getDriver()[pri:0, instance:testing.HomePageTest@3012646b]" started-at="2023-03-01T19:08:39 EST" name="getDriver" finished-at="2023-03-01T19:08:45 EST" duration-ms="5371" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getDriver -->
-        <test-method signature="couponApply()[pri:0, instance:testing.HomePageTest@3012646b]" started-at="2023-02-28T19:12:22 EST" name="couponApply" finished-at="2023-02-28T19:12:30 EST" duration-ms="8091" status="PASS">
+        <test-method signature="couponApply()[pri:0, instance:testing.HomePageTest@3012646b]" started-at="2023-03-01T19:08:45 EST" name="couponApply" finished-at="2023-03-01T19:08:53 EST" duration-ms="8162" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- couponApply -->
-        <test-method is-config="true" signature="closeDriver()[pri:0, instance:testing.HomePageTest@3012646b]" started-at="2023-02-28T19:12:30 EST" name="closeDriver" finished-at="2023-02-28T19:12:31 EST" duration-ms="727" status="PASS">
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:testing.HomePageTest@3012646b]" started-at="2023-03-01T19:08:53 EST" name="closeDriver" finished-at="2023-03-01T19:08:54 EST" duration-ms="673" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeDriver -->
-        <test-method is-config="true" signature="getDriver()[pri:0, instance:testing.HomePageTest@3012646b]" started-at="2023-02-28T19:12:31 EST" name="getDriver" finished-at="2023-02-28T19:12:36 EST" duration-ms="5358" status="PASS">
+        <test-method is-config="true" signature="getDriver()[pri:0, instance:testing.HomePageTest@3012646b]" started-at="2023-03-01T19:08:54 EST" name="getDriver" finished-at="2023-03-01T19:08:58 EST" duration-ms="4849" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getDriver -->
-        <test-method signature="couponApplyLessThan450()[pri:0, instance:testing.HomePageTest@3012646b]" started-at="2023-02-28T19:12:36 EST" name="couponApplyLessThan450" finished-at="2023-02-28T19:12:45 EST" duration-ms="8629" status="PASS">
+        <test-method signature="couponApplyLessThan450()[pri:0, instance:testing.HomePageTest@3012646b]" started-at="2023-03-01T19:08:58 EST" name="couponApplyLessThan450" finished-at="2023-03-01T19:09:06 EST" duration-ms="7724" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- couponApplyLessThan450 -->
-        <test-method is-config="true" signature="closeDriver()[pri:0, instance:testing.HomePageTest@3012646b]" started-at="2023-02-28T19:12:45 EST" name="closeDriver" finished-at="2023-02-28T19:12:46 EST" duration-ms="654" status="PASS">
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:testing.HomePageTest@3012646b]" started-at="2023-03-01T19:09:06 EST" name="closeDriver" finished-at="2023-03-01T19:09:07 EST" duration-ms="819" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeDriver -->
-        <test-method is-config="true" signature="getDriver()[pri:0, instance:testing.HomePageTest@3012646b]" started-at="2023-02-28T19:12:46 EST" name="getDriver" finished-at="2023-02-28T19:12:51 EST" duration-ms="4955" status="PASS">
+        <test-method is-config="true" signature="getDriver()[pri:0, instance:testing.HomePageTest@3012646b]" started-at="2023-03-01T19:09:07 EST" name="getDriver" finished-at="2023-03-01T19:09:12 EST" duration-ms="4749" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getDriver -->
-        <test-method signature="removeItem()[pri:0, instance:testing.HomePageTest@3012646b]" started-at="2023-02-28T19:12:51 EST" name="removeItem" finished-at="2023-02-28T19:12:58 EST" duration-ms="7027" status="PASS">
+        <test-method signature="removeItem()[pri:0, instance:testing.HomePageTest@3012646b]" started-at="2023-03-01T19:09:12 EST" name="removeItem" finished-at="2023-03-01T19:09:19 EST" duration-ms="7301" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- removeItem -->
-        <test-method is-config="true" signature="closeDriver()[pri:0, instance:testing.HomePageTest@3012646b]" started-at="2023-02-28T19:12:58 EST" name="closeDriver" finished-at="2023-02-28T19:12:59 EST" duration-ms="1719" status="PASS">
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:testing.HomePageTest@3012646b]" started-at="2023-03-01T19:09:19 EST" name="closeDriver" finished-at="2023-03-01T19:09:20 EST" duration-ms="646" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeDriver -->
-        <test-method is-config="true" signature="getDriver()[pri:0, instance:testing.HomePageTest@3012646b]" started-at="2023-02-28T19:12:59 EST" name="getDriver" finished-at="2023-02-28T19:13:06 EST" duration-ms="7164" status="PASS">
+        <test-method is-config="true" signature="getDriver()[pri:0, instance:testing.HomePageTest@3012646b]" started-at="2023-03-01T19:09:20 EST" name="getDriver" finished-at="2023-03-01T19:09:25 EST" duration-ms="5047" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getDriver -->
-        <test-method signature="threeArrivalsOnly2()[pri:0, instance:testing.HomePageTest@3012646b]" started-at="2023-02-28T19:13:06 EST" name="threeArrivalsOnly2" finished-at="2023-02-28T19:13:27 EST" duration-ms="20228" status="PASS">
+        <test-method signature="threeArrivalsOnly2()[pri:0, instance:testing.HomePageTest@3012646b]" started-at="2023-03-01T19:09:25 EST" name="threeArrivalsOnly2" finished-at="2023-03-01T19:09:45 EST" duration-ms="20213" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- threeArrivalsOnly2 -->
-        <test-method is-config="true" signature="closeDriver()[pri:0, instance:testing.HomePageTest@3012646b]" started-at="2023-02-28T19:13:27 EST" name="closeDriver" finished-at="2023-02-28T19:13:27 EST" duration-ms="702" status="PASS">
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:testing.HomePageTest@3012646b]" started-at="2023-03-01T19:09:45 EST" name="closeDriver" finished-at="2023-03-01T19:09:46 EST" duration-ms="744" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeDriver -->
-        <test-method is-config="true" signature="getDriver()[pri:0, instance:testing.HomePageTest@3012646b]" started-at="2023-02-28T19:13:27 EST" name="getDriver" finished-at="2023-02-28T19:13:33 EST" duration-ms="5577" status="PASS">
+        <test-method is-config="true" signature="getDriver()[pri:0, instance:testing.HomePageTest@3012646b]" started-at="2023-03-01T19:09:46 EST" name="getDriver" finished-at="2023-03-01T19:09:51 EST" duration-ms="5296" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getDriver -->
-        <test-method signature="threeSlidersOnly1()[pri:0, instance:testing.HomePageTest@3012646b]" started-at="2023-02-28T19:13:33 EST" name="threeSlidersOnly1" finished-at="2023-02-28T19:13:36 EST" duration-ms="3402" status="PASS">
+        <test-method signature="threeSlidersOnly1()[pri:0, instance:testing.HomePageTest@3012646b]" started-at="2023-03-01T19:09:51 EST" name="threeSlidersOnly1" finished-at="2023-03-01T19:09:56 EST" duration-ms="4888" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- threeSlidersOnly1 -->
-        <test-method is-config="true" signature="closeDriver()[pri:0, instance:testing.HomePageTest@3012646b]" started-at="2023-02-28T19:13:36 EST" name="closeDriver" finished-at="2023-02-28T19:13:37 EST" duration-ms="614" status="PASS">
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:testing.HomePageTest@3012646b]" started-at="2023-03-01T19:09:56 EST" name="closeDriver" finished-at="2023-03-01T19:09:57 EST" duration-ms="645" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeDriver -->
-        <test-method is-config="true" signature="getDriver()[pri:0, instance:testing.HomePageTest@3012646b]" started-at="2023-02-28T19:13:37 EST" name="getDriver" finished-at="2023-02-28T19:13:42 EST" duration-ms="5122" status="PASS">
+        <test-method is-config="true" signature="getDriver()[pri:0, instance:testing.HomePageTest@3012646b]" started-at="2023-03-01T19:09:57 EST" name="getDriver" finished-at="2023-03-01T19:10:01 EST" duration-ms="4862" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getDriver -->
-        <test-method signature="updatebasket()[pri:0, instance:testing.HomePageTest@3012646b]" started-at="2023-02-28T19:13:42 EST" name="updatebasket" finished-at="2023-02-28T19:13:49 EST" duration-ms="6495" status="PASS">
+        <test-method signature="updatebasket()[pri:0, instance:testing.HomePageTest@3012646b]" started-at="2023-03-01T19:10:01 EST" name="updatebasket" finished-at="2023-03-01T19:10:09 EST" duration-ms="7564" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- updatebasket -->
-        <test-method is-config="true" signature="closeDriver()[pri:0, instance:testing.HomePageTest@3012646b]" started-at="2023-02-28T19:13:49 EST" name="closeDriver" finished-at="2023-02-28T19:13:49 EST" duration-ms="644" status="PASS">
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:testing.HomePageTest@3012646b]" started-at="2023-03-01T19:10:09 EST" name="closeDriver" finished-at="2023-03-01T19:10:10 EST" duration-ms="636" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeDriver -->
       </class> <!-- testing.HomePageTest -->
       <class name="testing.MyAccountTest">
-        <test-method is-config="true" signature="getDriver()[pri:0, instance:testing.MyAccountTest@54a7079e]" started-at="2023-02-28T19:08:48 EST" name="getDriver" finished-at="2023-02-28T19:08:55 EST" duration-ms="6510" status="PASS">
+        <test-method is-config="true" signature="getDriver()[pri:0, instance:testing.MyAccountTest@54a7079e]" started-at="2023-03-01T19:05:03 EST" name="getDriver" finished-at="2023-03-01T19:05:09 EST" duration-ms="5933" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getDriver -->
-        <test-method signature="accountDetailsFunctionCheck7()[pri:0, instance:testing.MyAccountTest@54a7079e]" started-at="2023-02-28T19:08:55 EST" name="accountDetailsFunctionCheck7" finished-at="2023-02-28T19:09:00 EST" duration-ms="5502" status="PASS">
+        <test-method signature="accountDetailsFunctionCheck7()[pri:0, instance:testing.MyAccountTest@54a7079e]" started-at="2023-03-01T19:05:09 EST" name="accountDetailsFunctionCheck7" finished-at="2023-03-01T19:05:15 EST" duration-ms="6215" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- accountDetailsFunctionCheck7 -->
-        <test-method is-config="true" signature="closeDriver()[pri:0, instance:testing.MyAccountTest@54a7079e]" started-at="2023-02-28T19:09:00 EST" name="closeDriver" finished-at="2023-02-28T19:09:01 EST" duration-ms="607" status="PASS">
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:testing.MyAccountTest@54a7079e]" started-at="2023-03-01T19:05:15 EST" name="closeDriver" finished-at="2023-03-01T19:05:16 EST" duration-ms="679" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeDriver -->
-        <test-method is-config="true" signature="getDriver()[pri:0, instance:testing.MyAccountTest@54a7079e]" started-at="2023-02-28T19:09:01 EST" name="getDriver" finished-at="2023-02-28T19:09:06 EST" duration-ms="5510" status="PASS">
+        <test-method is-config="true" signature="getDriver()[pri:0, instance:testing.MyAccountTest@54a7079e]" started-at="2023-03-01T19:05:16 EST" name="getDriver" finished-at="2023-03-01T19:05:21 EST" duration-ms="5008" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getDriver -->
-        <test-method signature="addressFunctionalityCheck5()[pri:0, instance:testing.MyAccountTest@54a7079e]" started-at="2023-02-28T19:09:06 EST" name="addressFunctionalityCheck5" finished-at="2023-02-28T19:09:13 EST" duration-ms="6435" status="PASS">
+        <test-method signature="addressFunctionalityCheck5()[pri:0, instance:testing.MyAccountTest@54a7079e]" started-at="2023-03-01T19:05:21 EST" name="addressFunctionalityCheck5" finished-at="2023-03-01T19:05:28 EST" duration-ms="6491" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addressFunctionalityCheck5 -->
-        <test-method is-config="true" signature="closeDriver()[pri:0, instance:testing.MyAccountTest@54a7079e]" started-at="2023-02-28T19:09:13 EST" name="closeDriver" finished-at="2023-02-28T19:09:13 EST" duration-ms="619" status="PASS">
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:testing.MyAccountTest@54a7079e]" started-at="2023-03-01T19:05:28 EST" name="closeDriver" finished-at="2023-03-01T19:05:28 EST" duration-ms="841" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeDriver -->
-        <test-method is-config="true" signature="getDriver()[pri:0, instance:testing.MyAccountTest@54a7079e]" started-at="2023-02-28T19:09:13 EST" name="getDriver" finished-at="2023-02-28T19:09:18 EST" duration-ms="4866" status="PASS">
+        <test-method is-config="true" signature="getDriver()[pri:0, instance:testing.MyAccountTest@54a7079e]" started-at="2023-03-01T19:05:28 EST" name="getDriver" finished-at="2023-03-01T19:05:33 EST" duration-ms="4903" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getDriver -->
-        <test-method signature="checkDashboardLink1()[pri:0, instance:testing.MyAccountTest@54a7079e]" started-at="2023-02-28T19:09:18 EST" name="checkDashboardLink1" finished-at="2023-02-28T19:09:23 EST" duration-ms="4322" status="PASS">
+        <test-method signature="checkDashboardLink1()[pri:0, instance:testing.MyAccountTest@54a7079e]" started-at="2023-03-01T19:05:33 EST" name="checkDashboardLink1" finished-at="2023-03-01T19:05:37 EST" duration-ms="3904" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkDashboardLink1 -->
-        <test-method is-config="true" signature="closeDriver()[pri:0, instance:testing.MyAccountTest@54a7079e]" started-at="2023-02-28T19:09:23 EST" name="closeDriver" finished-at="2023-02-28T19:09:23 EST" duration-ms="688" status="PASS">
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:testing.MyAccountTest@54a7079e]" started-at="2023-03-01T19:05:37 EST" name="closeDriver" finished-at="2023-03-01T19:05:38 EST" duration-ms="617" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeDriver -->
-        <test-method is-config="true" signature="getDriver()[pri:0, instance:testing.MyAccountTest@54a7079e]" started-at="2023-02-28T19:09:23 EST" name="getDriver" finished-at="2023-02-28T19:09:28 EST" duration-ms="5135" status="PASS">
+        <test-method is-config="true" signature="getDriver()[pri:0, instance:testing.MyAccountTest@54a7079e]" started-at="2023-03-01T19:05:38 EST" name="getDriver" finished-at="2023-03-01T19:05:43 EST" duration-ms="4980" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getDriver -->
-        <test-method signature="checkStatusDateDetails4()[pri:0, instance:testing.MyAccountTest@54a7079e]" started-at="2023-02-28T19:09:28 EST" name="checkStatusDateDetails4" finished-at="2023-02-28T19:09:37 EST" duration-ms="8007" status="PASS">
+        <test-method signature="checkStatusDateDetails4()[pri:0, instance:testing.MyAccountTest@54a7079e]" started-at="2023-03-01T19:05:43 EST" name="checkStatusDateDetails4" finished-at="2023-03-01T19:05:51 EST" duration-ms="7828" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkStatusDateDetails4 -->
-        <test-method is-config="true" signature="closeDriver()[pri:0, instance:testing.MyAccountTest@54a7079e]" started-at="2023-02-28T19:09:37 EST" name="closeDriver" finished-at="2023-02-28T19:09:37 EST" duration-ms="667" status="PASS">
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:testing.MyAccountTest@54a7079e]" started-at="2023-03-01T19:05:51 EST" name="closeDriver" finished-at="2023-03-01T19:05:51 EST" duration-ms="674" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeDriver -->
-        <test-method is-config="true" signature="getDriver()[pri:0, instance:testing.MyAccountTest@54a7079e]" started-at="2023-02-28T19:09:37 EST" name="getDriver" finished-at="2023-02-28T19:09:42 EST" duration-ms="5064" status="PASS">
+        <test-method is-config="true" signature="getDriver()[pri:0, instance:testing.MyAccountTest@54a7079e]" started-at="2023-03-01T19:05:51 EST" name="getDriver" finished-at="2023-03-01T19:05:58 EST" duration-ms="6347" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getDriver -->
-        <test-method signature="checkViewOrderLink2()[pri:0, instance:testing.MyAccountTest@54a7079e]" started-at="2023-02-28T19:09:42 EST" name="checkViewOrderLink2" finished-at="2023-02-28T19:09:50 EST" duration-ms="7627" status="PASS">
+        <test-method signature="checkViewOrderLink2()[pri:0, instance:testing.MyAccountTest@54a7079e]" started-at="2023-03-01T19:05:58 EST" name="checkViewOrderLink2" finished-at="2023-03-01T19:06:07 EST" duration-ms="8851" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkViewOrderLink2 -->
-        <test-method is-config="true" signature="closeDriver()[pri:0, instance:testing.MyAccountTest@54a7079e]" started-at="2023-02-28T19:09:50 EST" name="closeDriver" finished-at="2023-02-28T19:09:51 EST" duration-ms="652" status="PASS">
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:testing.MyAccountTest@54a7079e]" started-at="2023-03-01T19:06:07 EST" name="closeDriver" finished-at="2023-03-01T19:06:09 EST" duration-ms="2337" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeDriver -->
-        <test-method is-config="true" signature="getDriver()[pri:0, instance:testing.MyAccountTest@54a7079e]" started-at="2023-02-28T19:09:51 EST" name="getDriver" finished-at="2023-02-28T19:09:56 EST" duration-ms="5393" status="PASS">
+        <test-method is-config="true" signature="getDriver()[pri:0, instance:testing.MyAccountTest@54a7079e]" started-at="2023-03-01T19:06:09 EST" name="getDriver" finished-at="2023-03-01T19:06:16 EST" duration-ms="7160" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getDriver -->
-        <test-method signature="checkViewOrderLinkDetails3()[pri:0, instance:testing.MyAccountTest@54a7079e]" started-at="2023-02-28T19:09:56 EST" name="checkViewOrderLinkDetails3" finished-at="2023-02-28T19:10:04 EST" duration-ms="7980" status="PASS">
+        <test-method signature="checkViewOrderLinkDetails3()[pri:0, instance:testing.MyAccountTest@54a7079e]" started-at="2023-03-01T19:06:16 EST" name="checkViewOrderLinkDetails3" finished-at="2023-03-01T19:06:25 EST" duration-ms="9443" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkViewOrderLinkDetails3 -->
-        <test-method is-config="true" signature="closeDriver()[pri:0, instance:testing.MyAccountTest@54a7079e]" started-at="2023-02-28T19:10:04 EST" name="closeDriver" finished-at="2023-02-28T19:10:05 EST" duration-ms="809" status="PASS">
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:testing.MyAccountTest@54a7079e]" started-at="2023-03-01T19:06:25 EST" name="closeDriver" finished-at="2023-03-01T19:06:27 EST" duration-ms="1984" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeDriver -->
-        <test-method is-config="true" signature="getDriver()[pri:0, instance:testing.MyAccountTest@54a7079e]" started-at="2023-02-28T19:10:05 EST" name="getDriver" finished-at="2023-02-28T19:10:10 EST" duration-ms="5207" status="PASS">
+        <test-method is-config="true" signature="getDriver()[pri:0, instance:testing.MyAccountTest@54a7079e]" started-at="2023-03-01T19:06:27 EST" name="getDriver" finished-at="2023-03-01T19:06:35 EST" duration-ms="7222" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getDriver -->
-        <test-method signature="editShippingAddressCheck6()[pri:0, instance:testing.MyAccountTest@54a7079e]" started-at="2023-02-28T19:10:10 EST" name="editShippingAddressCheck6" finished-at="2023-02-28T19:10:30 EST" duration-ms="20059" status="PASS">
+        <test-method signature="editShippingAddressCheck6()[pri:0, instance:testing.MyAccountTest@54a7079e]" started-at="2023-03-01T19:06:35 EST" name="editShippingAddressCheck6" finished-at="2023-03-01T19:06:45 EST" duration-ms="10035" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- editShippingAddressCheck6 -->
-        <test-method is-config="true" signature="closeDriver()[pri:0, instance:testing.MyAccountTest@54a7079e]" started-at="2023-02-28T19:10:30 EST" name="closeDriver" finished-at="2023-02-28T19:10:31 EST" duration-ms="659" status="PASS">
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:testing.MyAccountTest@54a7079e]" started-at="2023-03-01T19:06:45 EST" name="closeDriver" finished-at="2023-03-01T19:06:46 EST" duration-ms="1153" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeDriver -->
-        <test-method is-config="true" signature="getDriver()[pri:0, instance:testing.MyAccountTest@54a7079e]" started-at="2023-02-28T19:10:31 EST" name="getDriver" finished-at="2023-02-28T19:10:36 EST" duration-ms="4901" status="PASS">
+        <test-method is-config="true" signature="getDriver()[pri:0, instance:testing.MyAccountTest@54a7079e]" started-at="2023-03-01T19:06:46 EST" name="getDriver" finished-at="2023-03-01T19:06:53 EST" duration-ms="7386" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getDriver -->
-        <test-method signature="logoutCheck8()[pri:0, instance:testing.MyAccountTest@54a7079e]" started-at="2023-02-28T19:10:36 EST" name="logoutCheck8" finished-at="2023-02-28T19:10:42 EST" duration-ms="6526" status="PASS">
+        <test-method signature="logoutCheck8()[pri:0, instance:testing.MyAccountTest@54a7079e]" started-at="2023-03-01T19:06:53 EST" name="logoutCheck8" finished-at="2023-03-01T19:07:00 EST" duration-ms="6958" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logoutCheck8 -->
-        <test-method is-config="true" signature="closeDriver()[pri:0, instance:testing.MyAccountTest@54a7079e]" started-at="2023-02-28T19:10:42 EST" name="closeDriver" finished-at="2023-02-28T19:10:43 EST" duration-ms="701" status="PASS">
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:testing.MyAccountTest@54a7079e]" started-at="2023-03-01T19:07:00 EST" name="closeDriver" finished-at="2023-03-01T19:07:01 EST" duration-ms="622" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeDriver -->
       </class> <!-- testing.MyAccountTest -->
       <class name="testing.RegistrationTest">
-        <test-method is-config="true" signature="getDriver()[pri:0, instance:testing.RegistrationTest@25641d39]" started-at="2023-02-28T19:15:15 EST" name="getDriver" finished-at="2023-02-28T19:15:20 EST" duration-ms="5112" status="PASS">
+        <test-method is-config="true" signature="getDriver()[pri:0, instance:testing.RegistrationTest@25641d39]" started-at="2023-03-01T19:11:31 EST" name="getDriver" finished-at="2023-03-01T19:11:39 EST" duration-ms="7559" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getDriver -->
-        <test-method signature="emptyEmailId3()[pri:0, instance:testing.RegistrationTest@25641d39]" started-at="2023-02-28T19:15:20 EST" name="emptyEmailId3" finished-at="2023-02-28T19:15:25 EST" duration-ms="5233" status="PASS">
+        <test-method signature="emptyEmailId3()[pri:0, instance:testing.RegistrationTest@25641d39]" started-at="2023-03-01T19:11:39 EST" name="emptyEmailId3" finished-at="2023-03-01T19:11:44 EST" duration-ms="4650" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- emptyEmailId3 -->
-        <test-method is-config="true" signature="closeDriver()[pri:0, instance:testing.RegistrationTest@25641d39]" started-at="2023-02-28T19:15:25 EST" name="closeDriver" finished-at="2023-02-28T19:15:26 EST" duration-ms="660" status="PASS">
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:testing.RegistrationTest@25641d39]" started-at="2023-03-01T19:11:44 EST" name="closeDriver" finished-at="2023-03-01T19:11:44 EST" duration-ms="681" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeDriver -->
-        <test-method is-config="true" signature="getDriver()[pri:0, instance:testing.RegistrationTest@25641d39]" started-at="2023-02-28T19:15:26 EST" name="getDriver" finished-at="2023-02-28T19:15:31 EST" duration-ms="5488" status="PASS">
+        <test-method is-config="true" signature="getDriver()[pri:0, instance:testing.RegistrationTest@25641d39]" started-at="2023-03-01T19:11:44 EST" name="getDriver" finished-at="2023-03-01T19:11:49 EST" duration-ms="4812" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getDriver -->
-        <test-method signature="emptyPassword4()[pri:0, instance:testing.RegistrationTest@25641d39]" started-at="2023-02-28T19:15:31 EST" name="emptyPassword4" finished-at="2023-02-28T19:15:35 EST" duration-ms="3598" status="PASS">
+        <test-method signature="emptyPassword4()[pri:0, instance:testing.RegistrationTest@25641d39]" started-at="2023-03-01T19:11:49 EST" name="emptyPassword4" finished-at="2023-03-01T19:11:53 EST" duration-ms="3980" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- emptyPassword4 -->
-        <test-method is-config="true" signature="closeDriver()[pri:0, instance:testing.RegistrationTest@25641d39]" started-at="2023-02-28T19:15:35 EST" name="closeDriver" finished-at="2023-02-28T19:15:35 EST" duration-ms="605" status="PASS">
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:testing.RegistrationTest@25641d39]" started-at="2023-03-01T19:11:53 EST" name="closeDriver" finished-at="2023-03-01T19:11:54 EST" duration-ms="745" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeDriver -->
-        <test-method is-config="true" signature="getDriver()[pri:0, instance:testing.RegistrationTest@25641d39]" started-at="2023-02-28T19:15:35 EST" name="getDriver" finished-at="2023-02-28T19:15:41 EST" duration-ms="5684" status="PASS">
+        <test-method is-config="true" signature="getDriver()[pri:0, instance:testing.RegistrationTest@25641d39]" started-at="2023-03-01T19:11:54 EST" name="getDriver" finished-at="2023-03-01T19:11:59 EST" duration-ms="4885" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getDriver -->
-        <test-method signature="emptyPasswordAndEmptyUserName5()[pri:0, instance:testing.RegistrationTest@25641d39]" started-at="2023-02-28T19:15:41 EST" name="emptyPasswordAndEmptyUserName5" finished-at="2023-02-28T19:15:45 EST" duration-ms="4539" status="PASS">
+        <test-method signature="emptyPasswordAndEmptyUserName5()[pri:0, instance:testing.RegistrationTest@25641d39]" started-at="2023-03-01T19:11:59 EST" name="emptyPasswordAndEmptyUserName5" finished-at="2023-03-01T19:12:03 EST" duration-ms="3812" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- emptyPasswordAndEmptyUserName5 -->
-        <test-method is-config="true" signature="closeDriver()[pri:0, instance:testing.RegistrationTest@25641d39]" started-at="2023-02-28T19:15:45 EST" name="closeDriver" finished-at="2023-02-28T19:15:46 EST" duration-ms="577" status="PASS">
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:testing.RegistrationTest@25641d39]" started-at="2023-03-01T19:12:03 EST" name="closeDriver" finished-at="2023-03-01T19:12:03 EST" duration-ms="633" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeDriver -->
-        <test-method is-config="true" signature="getDriver()[pri:0, instance:testing.RegistrationTest@25641d39]" started-at="2023-02-28T19:15:46 EST" name="getDriver" finished-at="2023-02-28T19:15:51 EST" duration-ms="5088" status="PASS">
+        <test-method is-config="true" signature="getDriver()[pri:0, instance:testing.RegistrationTest@25641d39]" started-at="2023-03-01T19:12:03 EST" name="getDriver" finished-at="2023-03-01T19:12:08 EST" duration-ms="4739" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getDriver -->
-        <test-method signature="registrationWithInvalidEmailAddress2()[pri:0, instance:testing.RegistrationTest@25641d39]" started-at="2023-02-28T19:15:51 EST" name="registrationWithInvalidEmailAddress2" finished-at="2023-02-28T19:15:56 EST" duration-ms="4644" status="PASS">
+        <test-method signature="registrationWithInvalidEmailAddress2()[pri:0, instance:testing.RegistrationTest@25641d39]" started-at="2023-03-01T19:12:08 EST" name="registrationWithInvalidEmailAddress2" finished-at="2023-03-01T19:12:13 EST" duration-ms="5342" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- registrationWithInvalidEmailAddress2 -->
-        <test-method is-config="true" signature="closeDriver()[pri:0, instance:testing.RegistrationTest@25641d39]" started-at="2023-02-28T19:15:56 EST" name="closeDriver" finished-at="2023-02-28T19:15:56 EST" duration-ms="646" status="PASS">
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:testing.RegistrationTest@25641d39]" started-at="2023-03-01T19:12:13 EST" name="closeDriver" finished-at="2023-03-01T19:12:14 EST" duration-ms="687" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeDriver -->
-        <test-method is-config="true" signature="getDriver()[pri:0, instance:testing.RegistrationTest@25641d39]" started-at="2023-02-28T19:15:56 EST" name="getDriver" finished-at="2023-02-28T19:16:01 EST" duration-ms="4961" status="PASS">
+        <test-method is-config="true" signature="getDriver()[pri:0, instance:testing.RegistrationTest@25641d39]" started-at="2023-03-01T19:12:14 EST" name="getDriver" finished-at="2023-03-01T19:12:19 EST" duration-ms="5031" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getDriver -->
-        <test-method signature="signInTest1()[pri:0, instance:testing.RegistrationTest@25641d39]" started-at="2023-02-28T19:16:01 EST" name="signInTest1" finished-at="2023-02-28T19:16:07 EST" duration-ms="5213" status="PASS">
+        <test-method signature="signInTest1()[pri:0, instance:testing.RegistrationTest@25641d39]" started-at="2023-03-01T19:12:19 EST" name="signInTest1" finished-at="2023-03-01T19:12:25 EST" duration-ms="6000" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- signInTest1 -->
-        <test-method is-config="true" signature="closeDriver()[pri:0, instance:testing.RegistrationTest@25641d39]" started-at="2023-02-28T19:16:07 EST" name="closeDriver" finished-at="2023-02-28T19:16:07 EST" duration-ms="656" status="PASS">
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:testing.RegistrationTest@25641d39]" started-at="2023-03-01T19:12:25 EST" name="closeDriver" finished-at="2023-03-01T19:12:26 EST" duration-ms="641" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeDriver -->
       </class> <!-- testing.RegistrationTest -->
       <class name="testing.LoginTest">
-        <test-method is-config="true" signature="getDriver()[pri:0, instance:testing.LoginTest@4a883b15]" started-at="2023-02-28T19:13:49 EST" name="getDriver" finished-at="2023-02-28T19:13:54 EST" duration-ms="5036" status="PASS">
+        <test-method is-config="true" signature="getDriver()[pri:0, instance:testing.LoginTest@4a883b15]" started-at="2023-03-01T19:10:10 EST" name="getDriver" finished-at="2023-03-01T19:10:14 EST" duration-ms="4885" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getDriver -->
-        <test-method signature="correctUserNameAndEmptyPassword3()[pri:0, instance:testing.LoginTest@4a883b15]" started-at="2023-02-28T19:13:54 EST" name="correctUserNameAndEmptyPassword3" finished-at="2023-02-28T19:13:59 EST" duration-ms="4319" status="PASS">
+        <test-method signature="correctUserNameAndEmptyPassword3()[pri:0, instance:testing.LoginTest@4a883b15]" started-at="2023-03-01T19:10:14 EST" name="correctUserNameAndEmptyPassword3" finished-at="2023-03-01T19:10:19 EST" duration-ms="4115" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- correctUserNameAndEmptyPassword3 -->
-        <test-method is-config="true" signature="closeDriver()[pri:0, instance:testing.LoginTest@4a883b15]" started-at="2023-02-28T19:13:59 EST" name="closeDriver" finished-at="2023-02-28T19:13:59 EST" duration-ms="682" status="PASS">
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:testing.LoginTest@4a883b15]" started-at="2023-03-01T19:10:19 EST" name="closeDriver" finished-at="2023-03-01T19:10:19 EST" duration-ms="653" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeDriver -->
-        <test-method is-config="true" signature="getDriver()[pri:0, instance:testing.LoginTest@4a883b15]" started-at="2023-02-28T19:13:59 EST" name="getDriver" finished-at="2023-02-28T19:14:07 EST" duration-ms="7909" status="PASS">
+        <test-method is-config="true" signature="getDriver()[pri:0, instance:testing.LoginTest@4a883b15]" started-at="2023-03-01T19:10:19 EST" name="getDriver" finished-at="2023-03-01T19:10:24 EST" duration-ms="4859" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getDriver -->
-        <test-method signature="emptyUserNameAndCorrectPassword4()[pri:0, instance:testing.LoginTest@4a883b15]" started-at="2023-02-28T19:14:07 EST" name="emptyUserNameAndCorrectPassword4" finished-at="2023-02-28T19:14:11 EST" duration-ms="3839" status="PASS">
+        <test-method signature="emptyUserNameAndCorrectPassword4()[pri:0, instance:testing.LoginTest@4a883b15]" started-at="2023-03-01T19:10:24 EST" name="emptyUserNameAndCorrectPassword4" finished-at="2023-03-01T19:10:28 EST" duration-ms="4095" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- emptyUserNameAndCorrectPassword4 -->
-        <test-method is-config="true" signature="closeDriver()[pri:0, instance:testing.LoginTest@4a883b15]" started-at="2023-02-28T19:14:11 EST" name="closeDriver" finished-at="2023-02-28T19:14:12 EST" duration-ms="691" status="PASS">
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:testing.LoginTest@4a883b15]" started-at="2023-03-01T19:10:28 EST" name="closeDriver" finished-at="2023-03-01T19:10:29 EST" duration-ms="795" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeDriver -->
-        <test-method is-config="true" signature="getDriver()[pri:0, instance:testing.LoginTest@4a883b15]" started-at="2023-02-28T19:14:12 EST" name="getDriver" finished-at="2023-02-28T19:14:17 EST" duration-ms="4901" status="PASS">
+        <test-method is-config="true" signature="getDriver()[pri:0, instance:testing.LoginTest@4a883b15]" started-at="2023-03-01T19:10:29 EST" name="getDriver" finished-at="2023-03-01T19:10:34 EST" duration-ms="4665" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getDriver -->
-        <test-method signature="emptyUserNameAndemptyPassword5()[pri:0, instance:testing.LoginTest@4a883b15]" started-at="2023-02-28T19:14:17 EST" name="emptyUserNameAndemptyPassword5" finished-at="2023-02-28T19:14:21 EST" duration-ms="4109" status="PASS">
+        <test-method signature="emptyUserNameAndemptyPassword5()[pri:0, instance:testing.LoginTest@4a883b15]" started-at="2023-03-01T19:10:34 EST" name="emptyUserNameAndemptyPassword5" finished-at="2023-03-01T19:10:38 EST" duration-ms="4175" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- emptyUserNameAndemptyPassword5 -->
-        <test-method is-config="true" signature="closeDriver()[pri:0, instance:testing.LoginTest@4a883b15]" started-at="2023-02-28T19:14:21 EST" name="closeDriver" finished-at="2023-02-28T19:14:21 EST" duration-ms="688" status="PASS">
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:testing.LoginTest@4a883b15]" started-at="2023-03-01T19:10:38 EST" name="closeDriver" finished-at="2023-03-01T19:10:38 EST" duration-ms="644" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeDriver -->
-        <test-method is-config="true" signature="getDriver()[pri:0, instance:testing.LoginTest@4a883b15]" started-at="2023-02-28T19:14:21 EST" name="getDriver" finished-at="2023-02-28T19:14:26 EST" duration-ms="4638" status="PASS">
+        <test-method is-config="true" signature="getDriver()[pri:0, instance:testing.LoginTest@4a883b15]" started-at="2023-03-01T19:10:38 EST" name="getDriver" finished-at="2023-03-01T19:10:43 EST" duration-ms="4770" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getDriver -->
-        <test-method signature="handlesCaseSensitive7()[pri:0, instance:testing.LoginTest@4a883b15]" started-at="2023-02-28T19:14:26 EST" name="handlesCaseSensitive7" finished-at="2023-02-28T19:14:30 EST" duration-ms="3980" status="PASS">
+        <test-method signature="handlesCaseSensitive7()[pri:0, instance:testing.LoginTest@4a883b15]" started-at="2023-03-01T19:10:43 EST" name="handlesCaseSensitive7" finished-at="2023-03-01T19:10:48 EST" duration-ms="4391" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- handlesCaseSensitive7 -->
-        <test-method is-config="true" signature="closeDriver()[pri:0, instance:testing.LoginTest@4a883b15]" started-at="2023-02-28T19:14:30 EST" name="closeDriver" finished-at="2023-02-28T19:14:31 EST" duration-ms="620" status="PASS">
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:testing.LoginTest@4a883b15]" started-at="2023-03-01T19:10:48 EST" name="closeDriver" finished-at="2023-03-01T19:10:48 EST" duration-ms="657" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeDriver -->
-        <test-method is-config="true" signature="getDriver()[pri:0, instance:testing.LoginTest@4a883b15]" started-at="2023-02-28T19:14:31 EST" name="getDriver" finished-at="2023-02-28T19:14:36 EST" duration-ms="5545" status="PASS">
+        <test-method is-config="true" signature="getDriver()[pri:0, instance:testing.LoginTest@4a883b15]" started-at="2023-03-01T19:10:48 EST" name="getDriver" finished-at="2023-03-01T19:10:53 EST" duration-ms="4756" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getDriver -->
-        <test-method signature="incorrectUserNameAndIncorrectPassword2()[pri:0, instance:testing.LoginTest@4a883b15]" started-at="2023-02-28T19:14:36 EST" name="incorrectUserNameAndIncorrectPassword2" finished-at="2023-02-28T19:14:40 EST" duration-ms="3646" status="PASS">
+        <test-method signature="incorrectUserNameAndIncorrectPassword2()[pri:0, instance:testing.LoginTest@4a883b15]" started-at="2023-03-01T19:10:53 EST" name="incorrectUserNameAndIncorrectPassword2" finished-at="2023-03-01T19:10:57 EST" duration-ms="4190" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- incorrectUserNameAndIncorrectPassword2 -->
-        <test-method is-config="true" signature="closeDriver()[pri:0, instance:testing.LoginTest@4a883b15]" started-at="2023-02-28T19:14:40 EST" name="closeDriver" finished-at="2023-02-28T19:14:40 EST" duration-ms="640" status="PASS">
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:testing.LoginTest@4a883b15]" started-at="2023-03-01T19:10:57 EST" name="closeDriver" finished-at="2023-03-01T19:10:58 EST" duration-ms="650" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeDriver -->
-        <test-method is-config="true" signature="getDriver()[pri:0, instance:testing.LoginTest@4a883b15]" started-at="2023-02-28T19:14:40 EST" name="getDriver" finished-at="2023-02-28T19:14:46 EST" duration-ms="5581" status="PASS">
+        <test-method is-config="true" signature="getDriver()[pri:0, instance:testing.LoginTest@4a883b15]" started-at="2023-03-01T19:10:58 EST" name="getDriver" finished-at="2023-03-01T19:11:03 EST" duration-ms="5200" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getDriver -->
-        <test-method signature="loginAuthentication8()[pri:0, instance:testing.LoginTest@4a883b15]" started-at="2023-02-28T19:14:46 EST" name="loginAuthentication8" finished-at="2023-02-28T19:14:55 EST" duration-ms="9034" status="PASS">
+        <test-method signature="loginAuthentication8()[pri:0, instance:testing.LoginTest@4a883b15]" started-at="2023-03-01T19:11:03 EST" name="loginAuthentication8" finished-at="2023-03-01T19:11:12 EST" duration-ms="8661" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginAuthentication8 -->
-        <test-method is-config="true" signature="closeDriver()[pri:0, instance:testing.LoginTest@4a883b15]" started-at="2023-02-28T19:14:55 EST" name="closeDriver" finished-at="2023-02-28T19:14:56 EST" duration-ms="645" status="PASS">
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:testing.LoginTest@4a883b15]" started-at="2023-03-01T19:11:12 EST" name="closeDriver" finished-at="2023-03-01T19:11:12 EST" duration-ms="707" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeDriver -->
-        <test-method is-config="true" signature="getDriver()[pri:0, instance:testing.LoginTest@4a883b15]" started-at="2023-02-28T19:14:56 EST" name="getDriver" finished-at="2023-02-28T19:15:01 EST" duration-ms="5040" status="PASS">
+        <test-method is-config="true" signature="getDriver()[pri:0, instance:testing.LoginTest@4a883b15]" started-at="2023-03-01T19:11:12 EST" name="getDriver" finished-at="2023-03-01T19:11:18 EST" duration-ms="5213" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getDriver -->
-        <test-method signature="passwordShouldBeMasked6()[pri:0, instance:testing.LoginTest@4a883b15]" started-at="2023-02-28T19:15:01 EST" name="passwordShouldBeMasked6" finished-at="2023-02-28T19:15:03 EST" duration-ms="2270" status="PASS">
+        <test-method signature="passwordShouldBeMasked6()[pri:0, instance:testing.LoginTest@4a883b15]" started-at="2023-03-01T19:11:18 EST" name="passwordShouldBeMasked6" finished-at="2023-03-01T19:11:20 EST" duration-ms="2797" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- passwordShouldBeMasked6 -->
-        <test-method is-config="true" signature="closeDriver()[pri:0, instance:testing.LoginTest@4a883b15]" started-at="2023-02-28T19:15:03 EST" name="closeDriver" finished-at="2023-02-28T19:15:04 EST" duration-ms="594" status="PASS">
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:testing.LoginTest@4a883b15]" started-at="2023-03-01T19:11:20 EST" name="closeDriver" finished-at="2023-03-01T19:11:21 EST" duration-ms="662" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeDriver -->
-        <test-method is-config="true" signature="getDriver()[pri:0, instance:testing.LoginTest@4a883b15]" started-at="2023-02-28T19:15:04 EST" name="getDriver" finished-at="2023-02-28T19:15:09 EST" duration-ms="5540" status="PASS">
+        <test-method is-config="true" signature="getDriver()[pri:0, instance:testing.LoginTest@4a883b15]" started-at="2023-03-01T19:11:21 EST" name="getDriver" finished-at="2023-03-01T19:11:26 EST" duration-ms="4774" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getDriver -->
-        <test-method signature="validUserNameAndValidPassword1()[pri:0, instance:testing.LoginTest@4a883b15]" started-at="2023-02-28T19:15:09 EST" name="validUserNameAndValidPassword1" finished-at="2023-02-28T19:15:14 EST" duration-ms="4731" status="PASS">
+        <test-method signature="validUserNameAndValidPassword1()[pri:0, instance:testing.LoginTest@4a883b15]" started-at="2023-03-01T19:11:26 EST" name="validUserNameAndValidPassword1" finished-at="2023-03-01T19:11:31 EST" duration-ms="4834" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validUserNameAndValidPassword1 -->
-        <test-method is-config="true" signature="closeDriver()[pri:0, instance:testing.LoginTest@4a883b15]" started-at="2023-02-28T19:15:14 EST" name="closeDriver" finished-at="2023-02-28T19:15:15 EST" duration-ms="622" status="PASS">
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:testing.LoginTest@4a883b15]" started-at="2023-03-01T19:11:31 EST" name="closeDriver" finished-at="2023-03-01T19:11:31 EST" duration-ms="644" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeDriver -->
       </class> <!-- testing.LoginTest -->
       <class name="testing.ShopTest">
-        <test-method is-config="true" signature="getDriver()[pri:0, instance:testing.ShopTest@7b36aa0c]" started-at="2023-02-28T19:16:07 EST" name="getDriver" finished-at="2023-02-28T19:16:12 EST" duration-ms="5178" status="PASS">
+        <test-method is-config="true" signature="getDriver()[pri:0, instance:testing.ShopTest@7b36aa0c]" started-at="2023-03-01T19:12:26 EST" name="getDriver" finished-at="2023-03-01T19:12:31 EST" duration-ms="5752" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getDriver -->
-        <test-method signature="baskedFunctionality9()[pri:0, instance:testing.ShopTest@7b36aa0c]" started-at="2023-02-28T19:16:12 EST" name="baskedFunctionality9" finished-at="2023-02-28T19:16:27 EST" duration-ms="14549" status="PASS">
+        <test-method signature="baskedFunctionality9()[pri:0, instance:testing.ShopTest@7b36aa0c]" started-at="2023-03-01T19:12:31 EST" name="baskedFunctionality9" finished-at="2023-03-01T19:12:46 EST" duration-ms="14638" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- baskedFunctionality9 -->
-        <test-method is-config="true" signature="closeDriver()[pri:0, instance:testing.ShopTest@7b36aa0c]" started-at="2023-02-28T19:16:27 EST" name="closeDriver" finished-at="2023-02-28T19:16:29 EST" duration-ms="1646" status="PASS">
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:testing.ShopTest@7b36aa0c]" started-at="2023-03-01T19:12:46 EST" name="closeDriver" finished-at="2023-03-01T19:12:47 EST" duration-ms="675" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeDriver -->
-        <test-method is-config="true" signature="getDriver()[pri:0, instance:testing.ShopTest@7b36aa0c]" started-at="2023-02-28T19:16:29 EST" name="getDriver" finished-at="2023-02-28T19:16:36 EST" duration-ms="7510" status="PASS">
+        <test-method is-config="true" signature="getDriver()[pri:0, instance:testing.ShopTest@7b36aa0c]" started-at="2023-03-01T19:12:47 EST" name="getDriver" finished-at="2023-03-01T19:12:52 EST" duration-ms="5069" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getDriver -->
-        <test-method signature="calculateTaxRate11()[pri:0, instance:testing.ShopTest@7b36aa0c]" started-at="2023-02-28T19:16:36 EST" name="calculateTaxRate11" finished-at="2023-02-28T19:16:46 EST" duration-ms="9521" status="PASS">
+        <test-method signature="calculateTaxRate11()[pri:0, instance:testing.ShopTest@7b36aa0c]" started-at="2023-03-01T19:12:52 EST" name="calculateTaxRate11" finished-at="2023-03-01T19:13:01 EST" duration-ms="9258" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- calculateTaxRate11 -->
-        <test-method is-config="true" signature="closeDriver()[pri:0, instance:testing.ShopTest@7b36aa0c]" started-at="2023-02-28T19:16:46 EST" name="closeDriver" finished-at="2023-02-28T19:16:47 EST" duration-ms="1361" status="PASS">
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:testing.ShopTest@7b36aa0c]" started-at="2023-03-01T19:13:01 EST" name="closeDriver" finished-at="2023-03-01T19:13:02 EST" duration-ms="655" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeDriver -->
-        <test-method is-config="true" signature="getDriver()[pri:0, instance:testing.ShopTest@7b36aa0c]" started-at="2023-02-28T19:16:47 EST" name="getDriver" finished-at="2023-02-28T19:16:53 EST" duration-ms="6228" status="PASS">
+        <test-method is-config="true" signature="getDriver()[pri:0, instance:testing.ShopTest@7b36aa0c]" started-at="2023-03-01T19:13:02 EST" name="getDriver" finished-at="2023-03-01T19:13:07 EST" duration-ms="5397" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getDriver -->
-        <test-method signature="checkPriceRange2()[pri:0, instance:testing.ShopTest@7b36aa0c]" started-at="2023-02-28T19:16:53 EST" name="checkPriceRange2" finished-at="2023-02-28T19:16:58 EST" duration-ms="4410" status="PASS">
+        <test-method signature="checkPriceRange2()[pri:0, instance:testing.ShopTest@7b36aa0c]" started-at="2023-03-01T19:13:07 EST" name="checkPriceRange2" finished-at="2023-03-01T19:13:12 EST" duration-ms="4877" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkPriceRange2 -->
-        <test-method is-config="true" signature="closeDriver()[pri:0, instance:testing.ShopTest@7b36aa0c]" started-at="2023-02-28T19:16:58 EST" name="closeDriver" finished-at="2023-02-28T19:16:58 EST" duration-ms="658" status="PASS">
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:testing.ShopTest@7b36aa0c]" started-at="2023-03-01T19:13:12 EST" name="closeDriver" finished-at="2023-03-01T19:13:13 EST" duration-ms="666" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeDriver -->
-        <test-method is-config="true" signature="getDriver()[pri:0, instance:testing.ShopTest@7b36aa0c]" started-at="2023-02-28T19:16:58 EST" name="getDriver" finished-at="2023-02-28T19:17:03 EST" duration-ms="4972" status="PASS">
+        <test-method is-config="true" signature="getDriver()[pri:0, instance:testing.ShopTest@7b36aa0c]" started-at="2023-03-01T19:13:13 EST" name="getDriver" finished-at="2023-03-01T19:13:18 EST" duration-ms="5184" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getDriver -->
-        <test-method signature="filterByPriceFinctionality1()[pri:0, instance:testing.ShopTest@7b36aa0c]" started-at="2023-02-28T19:17:03 EST" name="filterByPriceFinctionality1" finished-at="2023-02-28T19:17:08 EST" duration-ms="5043" status="PASS">
+        <test-method signature="filterByPriceFinctionality1()[pri:0, instance:testing.ShopTest@7b36aa0c]" started-at="2023-03-01T19:13:18 EST" name="filterByPriceFinctionality1" finished-at="2023-03-01T19:13:22 EST" duration-ms="4679" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- filterByPriceFinctionality1 -->
-        <test-method is-config="true" signature="closeDriver()[pri:0, instance:testing.ShopTest@7b36aa0c]" started-at="2023-02-28T19:17:08 EST" name="closeDriver" finished-at="2023-02-28T19:17:09 EST" duration-ms="718" status="PASS">
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:testing.ShopTest@7b36aa0c]" started-at="2023-03-01T19:13:22 EST" name="closeDriver" finished-at="2023-03-01T19:13:23 EST" duration-ms="783" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeDriver -->
-        <test-method is-config="true" signature="getDriver()[pri:0, instance:testing.ShopTest@7b36aa0c]" started-at="2023-02-28T19:17:09 EST" name="getDriver" finished-at="2023-02-28T19:17:14 EST" duration-ms="5123" status="PASS">
+        <test-method is-config="true" signature="getDriver()[pri:0, instance:testing.ShopTest@7b36aa0c]" started-at="2023-03-01T19:13:23 EST" name="getDriver" finished-at="2023-03-01T19:13:29 EST" duration-ms="5521" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getDriver -->
-        <test-method signature="highToLow6()[pri:0, instance:testing.ShopTest@7b36aa0c]" started-at="2023-02-28T19:17:14 EST" name="highToLow6" finished-at="2023-02-28T19:17:19 EST" duration-ms="4484" status="PASS">
+        <test-method signature="highToLow6()[pri:0, instance:testing.ShopTest@7b36aa0c]" started-at="2023-03-01T19:13:29 EST" name="highToLow6" finished-at="2023-03-01T19:13:34 EST" duration-ms="5313" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- highToLow6 -->
-        <test-method is-config="true" signature="closeDriver()[pri:0, instance:testing.ShopTest@7b36aa0c]" started-at="2023-02-28T19:17:19 EST" name="closeDriver" finished-at="2023-02-28T19:17:19 EST" duration-ms="639" status="PASS">
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:testing.ShopTest@7b36aa0c]" started-at="2023-03-01T19:13:34 EST" name="closeDriver" finished-at="2023-03-01T19:13:35 EST" duration-ms="690" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeDriver -->
-        <test-method is-config="true" signature="getDriver()[pri:0, instance:testing.ShopTest@7b36aa0c]" started-at="2023-02-28T19:17:19 EST" name="getDriver" finished-at="2023-02-28T19:17:24 EST" duration-ms="4969" status="PASS">
+        <test-method is-config="true" signature="getDriver()[pri:0, instance:testing.ShopTest@7b36aa0c]" started-at="2023-03-01T19:13:35 EST" name="getDriver" finished-at="2023-03-01T19:13:39 EST" duration-ms="4730" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getDriver -->
-        <test-method signature="orderConfirmation10()[pri:0, instance:testing.ShopTest@7b36aa0c]" started-at="2023-02-28T19:17:24 EST" name="orderConfirmation10" finished-at="2023-02-28T19:17:41 EST" duration-ms="16297" status="PASS">
+        <test-method signature="orderConfirmation10()[pri:0, instance:testing.ShopTest@7b36aa0c]" started-at="2023-03-01T19:13:39 EST" name="orderConfirmation10" finished-at="2023-03-01T19:13:57 EST" duration-ms="17809" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- orderConfirmation10 -->
-        <test-method is-config="true" signature="closeDriver()[pri:0, instance:testing.ShopTest@7b36aa0c]" started-at="2023-02-28T19:17:41 EST" name="closeDriver" finished-at="2023-02-28T19:17:41 EST" duration-ms="703" status="PASS">
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:testing.ShopTest@7b36aa0c]" started-at="2023-03-01T19:13:57 EST" name="closeDriver" finished-at="2023-03-01T19:13:58 EST" duration-ms="685" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeDriver -->
-        <test-method is-config="true" signature="getDriver()[pri:0, instance:testing.ShopTest@7b36aa0c]" started-at="2023-02-28T19:17:41 EST" name="getDriver" finished-at="2023-02-28T19:17:46 EST" duration-ms="4901" status="PASS">
+        <test-method is-config="true" signature="getDriver()[pri:0, instance:testing.ShopTest@7b36aa0c]" started-at="2023-03-01T19:13:58 EST" name="getDriver" finished-at="2023-03-01T19:14:03 EST" duration-ms="5079" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getDriver -->
-        <test-method signature="readMoreFunctionality7()[pri:0, instance:testing.ShopTest@7b36aa0c]" started-at="2023-02-28T19:17:46 EST" name="readMoreFunctionality7" finished-at="2023-02-28T19:17:51 EST" duration-ms="4967" status="PASS">
+        <test-method signature="readMoreFunctionality7()[pri:0, instance:testing.ShopTest@7b36aa0c]" started-at="2023-03-01T19:14:03 EST" name="readMoreFunctionality7" finished-at="2023-03-01T19:14:08 EST" duration-ms="4928" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- readMoreFunctionality7 -->
-        <test-method is-config="true" signature="closeDriver()[pri:0, instance:testing.ShopTest@7b36aa0c]" started-at="2023-02-28T19:17:51 EST" name="closeDriver" finished-at="2023-02-28T19:17:52 EST" duration-ms="620" status="PASS">
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:testing.ShopTest@7b36aa0c]" started-at="2023-03-01T19:14:08 EST" name="closeDriver" finished-at="2023-03-01T19:14:09 EST" duration-ms="595" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeDriver -->
-        <test-method is-config="true" signature="getDriver()[pri:0, instance:testing.ShopTest@7b36aa0c]" started-at="2023-02-28T19:17:52 EST" name="getDriver" finished-at="2023-02-28T19:17:57 EST" duration-ms="4895" status="PASS">
+        <test-method is-config="true" signature="getDriver()[pri:0, instance:testing.ShopTest@7b36aa0c]" started-at="2023-03-01T19:14:09 EST" name="getDriver" finished-at="2023-03-01T19:14:29 EST" duration-ms="20173" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getDriver -->
-        <test-method signature="saleFunctionality8()[pri:0, instance:testing.ShopTest@7b36aa0c]" started-at="2023-02-28T19:17:57 EST" name="saleFunctionality8" finished-at="2023-02-28T19:18:02 EST" duration-ms="5356" status="PASS">
+        <test-method retried="true" signature="saleFunctionality8()[pri:0, instance:testing.ShopTest@7b36aa0c]" started-at="2023-03-01T19:14:29 EST" name="saleFunctionality8" finished-at="2023-03-01T19:14:41 EST" duration-ms="12449" status="SKIP">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: //ul[@class='products masonry-done']/li/a/span' (tried for 7 second(s) with 500 milliseconds interval)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: //ul[@class='products masonry-done']/li/a/span' (tried for 7 second(s) with 500 milliseconds interval)
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+at util.CommonMethods.click(CommonMethods.java:19)
+at testing.ShopTest.saleFunctionality8(ShopTest.java:88)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: //ul[@class='products masonry-done']/li/a/span
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-P52I1HH', ip: '192.168.1.210', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 110.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20230214051806, moz:geckodriverVersion: 0.32.2, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 15720, moz:profile: C:\Users\Enkhb\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: ec5848b0-5d38-4aee-bd8d-bbca39d09f7e
+*** Element info: {Using=xpath, value=//ul[@class='products masonry-done']/li/a/span}
+at jdk.internal.reflect.GeneratedConstructorAccessor22.newInstance(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy11.isDisplayed(Unknown Source)
+at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
+at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
+at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:670)
+at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:666)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+... 30 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- saleFunctionality8 -->
-        <test-method is-config="true" signature="closeDriver()[pri:0, instance:testing.ShopTest@7b36aa0c]" started-at="2023-02-28T19:18:02 EST" name="closeDriver" finished-at="2023-02-28T19:18:03 EST" duration-ms="733" status="PASS">
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:testing.ShopTest@7b36aa0c]" started-at="2023-03-01T19:14:41 EST" name="closeDriver" finished-at="2023-03-01T19:14:42 EST" duration-ms="622" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeDriver -->
-        <test-method is-config="true" signature="getDriver()[pri:0, instance:testing.ShopTest@7b36aa0c]" started-at="2023-02-28T19:18:03 EST" name="getDriver" finished-at="2023-02-28T19:18:09 EST" duration-ms="6158" status="PASS">
+        <test-method is-config="true" signature="getDriver()[pri:0, instance:testing.ShopTest@7b36aa0c]" started-at="2023-03-01T19:14:42 EST" name="getDriver" finished-at="2023-03-01T19:14:47 EST" duration-ms="5043" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getDriver -->
-        <test-method signature="sortByAverage4()[pri:0, instance:testing.ShopTest@7b36aa0c]" started-at="2023-02-28T19:18:09 EST" name="sortByAverage4" finished-at="2023-02-28T19:18:14 EST" duration-ms="4676" status="PASS">
+        <test-method signature="saleFunctionality8()[pri:0, instance:testing.ShopTest@7b36aa0c]" started-at="2023-03-01T19:14:47 EST" name="saleFunctionality8" finished-at="2023-03-01T19:14:52 EST" duration-ms="5277" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- saleFunctionality8 -->
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:testing.ShopTest@7b36aa0c]" started-at="2023-03-01T19:14:52 EST" name="closeDriver" finished-at="2023-03-01T19:14:53 EST" duration-ms="777" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+        <test-method is-config="true" signature="getDriver()[pri:0, instance:testing.ShopTest@7b36aa0c]" started-at="2023-03-01T19:14:53 EST" name="getDriver" finished-at="2023-03-01T19:14:58 EST" duration-ms="5202" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getDriver -->
+        <test-method signature="sortByAverage4()[pri:0, instance:testing.ShopTest@7b36aa0c]" started-at="2023-03-01T19:14:58 EST" name="sortByAverage4" finished-at="2023-03-01T19:15:04 EST" duration-ms="6091" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- sortByAverage4 -->
-        <test-method is-config="true" signature="closeDriver()[pri:0, instance:testing.ShopTest@7b36aa0c]" started-at="2023-02-28T19:18:14 EST" name="closeDriver" finished-at="2023-02-28T19:18:14 EST" duration-ms="683" status="PASS">
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:testing.ShopTest@7b36aa0c]" started-at="2023-03-01T19:15:04 EST" name="closeDriver" finished-at="2023-03-01T19:15:05 EST" duration-ms="653" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeDriver -->
-        <test-method is-config="true" signature="getDriver()[pri:0, instance:testing.ShopTest@7b36aa0c]" started-at="2023-02-28T19:18:14 EST" name="getDriver" finished-at="2023-02-28T19:18:19 EST" duration-ms="4929" status="PASS">
+        <test-method is-config="true" signature="getDriver()[pri:0, instance:testing.ShopTest@7b36aa0c]" started-at="2023-03-01T19:15:05 EST" name="getDriver" finished-at="2023-03-01T19:15:12 EST" duration-ms="7611" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getDriver -->
-        <test-method signature="sortByDate5()[pri:0, instance:testing.ShopTest@7b36aa0c]" started-at="2023-02-28T19:18:19 EST" name="sortByDate5" finished-at="2023-02-28T19:18:25 EST" duration-ms="5532" status="PASS">
+        <test-method signature="sortByDate5()[pri:0, instance:testing.ShopTest@7b36aa0c]" started-at="2023-03-01T19:15:12 EST" name="sortByDate5" finished-at="2023-03-01T19:15:18 EST" duration-ms="5780" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- sortByDate5 -->
-        <test-method is-config="true" signature="closeDriver()[pri:0, instance:testing.ShopTest@7b36aa0c]" started-at="2023-02-28T19:18:25 EST" name="closeDriver" finished-at="2023-02-28T19:18:25 EST" duration-ms="625" status="PASS">
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:testing.ShopTest@7b36aa0c]" started-at="2023-03-01T19:15:18 EST" name="closeDriver" finished-at="2023-03-01T19:15:19 EST" duration-ms="684" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeDriver -->
-        <test-method is-config="true" signature="getDriver()[pri:0, instance:testing.ShopTest@7b36aa0c]" started-at="2023-02-28T19:18:25 EST" name="getDriver" finished-at="2023-02-28T19:18:30 EST" duration-ms="5049" status="PASS">
+        <test-method is-config="true" signature="getDriver()[pri:0, instance:testing.ShopTest@7b36aa0c]" started-at="2023-03-01T19:15:19 EST" name="getDriver" finished-at="2023-03-01T19:15:24 EST" duration-ms="5137" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getDriver -->
-        <test-method signature="sortByPopularity3()[pri:0, instance:testing.ShopTest@7b36aa0c]" started-at="2023-02-28T19:18:30 EST" name="sortByPopularity3" finished-at="2023-02-28T19:18:35 EST" duration-ms="4562" status="PASS">
+        <test-method signature="sortByPopularity3()[pri:0, instance:testing.ShopTest@7b36aa0c]" started-at="2023-03-01T19:15:24 EST" name="sortByPopularity3" finished-at="2023-03-01T19:15:29 EST" duration-ms="4864" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- sortByPopularity3 -->
-        <test-method is-config="true" signature="closeDriver()[pri:0, instance:testing.ShopTest@7b36aa0c]" started-at="2023-02-28T19:18:35 EST" name="closeDriver" finished-at="2023-02-28T19:18:36 EST" duration-ms="643" status="PASS">
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:testing.ShopTest@7b36aa0c]" started-at="2023-03-01T19:15:29 EST" name="closeDriver" finished-at="2023-03-01T19:15:30 EST" duration-ms="740" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeDriver -->

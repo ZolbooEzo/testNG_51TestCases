@@ -17,7 +17,6 @@ public class HomePage {
 	@FindBy (xpath = "//nav[@class='woocommerce-breadcrumb']/a")
 	public WebElement homeMenu;
 	
-	
 	@FindBy (xpath = "//*[@id='menu-item-40']")
 	public WebElement shopLink;
 	

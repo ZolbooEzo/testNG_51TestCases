@@ -134,6 +134,9 @@ public class CommonMethods extends PageInitializer {
 		Assert.assertTrue(e.isDisplayed() && e2.isDisplayed() && e3.isDisplayed());
 	}
 	
+	
+	
+	
 	public static void navigateBack() {
 		wait(1);
 		BaseClass.getDriver().navigate().back();

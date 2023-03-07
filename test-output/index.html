@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-passed">Suite</span>
+              <span class="suite-name border-skipped">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -60,7 +60,7 @@
                 </li>
                 <li>
                   <a href="#" panel-name="group-Suite" class="navigator-link ">
-                    <span>19 groups</span>
+                    <span>22 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +92,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">45 methods,   45 passed</span>
+                    <span class="method-stats">46 methods,  1 skipped,  45 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Retried methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods skipped suite-Suite"> (hide)</a> <!-- hide-methods skipped suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods skipped suite-Suite"> (show)</a> <!-- show-methods skipped suite-Suite -->
+                    </span>
+                    <div class="method-list-content skipped suite-Suite">
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testing.ShopTest" class="method navigator-link" hash-for-method="saleFunctionality8">saleFunctionality8</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -338,6 +352,58 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">testing.ShopTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="saleFunctionality8">
+                  </a> <!-- saleFunctionality8 -->
+                  <span class="method-name">saleFunctionality8</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator &apos;By.xpath: //ul[@class=&apos;products masonry-done&apos;]/li/a/span&apos; (tried for 7 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at util.CommonMethods.click(CommonMethods.java:19)
+	at testing.ShopTest.saleFunctionality8(ShopTest.java:88)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: //ul[@class=&apos;products masonry-done&apos;]/li/a/span
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-P52I1HH&apos;, ip: &apos;192.168.1.210&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4.1&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 110.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20230214051806, moz:geckodriverVersion: 0.32.2, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 15720, moz:profile: C:\Users\Enkhb\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: ec5848b0-5d38-4aee-bd8d-bbca39d09f7e
+*** Element info: {Using=xpath, value=//ul[@class=&apos;products masonry-done&apos;]/li/a/span}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy11.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:670)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:666)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 30 more
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-skipped -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -1047,6 +1113,22 @@
               </div> <!-- method-in-group -->
             </div> <!-- test-group -->
             <div class="test-group">
+              <span class="test-group-name">login2</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">incorrectUserNameAndIncorrectPassword2</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">login7</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">handlesCaseSensitive7</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
               <span class="test-group-name">login8</span>
               <br/>
               <div class="method-in-group">
@@ -1087,6 +1169,14 @@
               </div> <!-- method-in-group -->
               <div class="method-in-group">
                 <span class="method-in-group-name">logoutCheck8</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">myAccount2</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">checkViewOrderLink2</span>
                 <br/>
               </div> <!-- method-in-group -->
             </div> <!-- test-group -->
@@ -1242,187 +1332,191 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(45);
+data.addRows(46);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'threeArrivalsOnly2')
 data.setCell(0, 2, 'testing.HomePageTest')
-data.setCell(0, 3, 20228);
+data.setCell(0, 3, 20213);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'editShippingAddressCheck6')
-data.setCell(1, 2, 'testing.MyAccountTest')
-data.setCell(1, 3, 20059);
+data.setCell(1, 1, 'orderConfirmation10')
+data.setCell(1, 2, 'testing.ShopTest')
+data.setCell(1, 3, 17809);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'orderConfirmation10')
-data.setCell(2, 2, 'testing.ShopTest')
-data.setCell(2, 3, 16297);
+data.setCell(2, 1, 'addToBasket')
+data.setCell(2, 2, 'testing.HomePageTest')
+data.setCell(2, 3, 15886);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'baskedFunctionality9')
 data.setCell(3, 2, 'testing.ShopTest')
-data.setCell(3, 3, 14549);
+data.setCell(3, 3, 14638);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'arrivalsShouldNavigate3')
-data.setCell(4, 2, 'testing.HomePageTest')
-data.setCell(4, 3, 10625);
+data.setCell(4, 1, 'saleFunctionality8')
+data.setCell(4, 2, 'testing.ShopTest')
+data.setCell(4, 3, 12449);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'checkOutTitle')
+data.setCell(5, 1, 'arrivalsShouldNavigate3')
 data.setCell(5, 2, 'testing.HomePageTest')
-data.setCell(5, 3, 9573);
+data.setCell(5, 3, 12222);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'calculateTaxRate11')
-data.setCell(6, 2, 'testing.ShopTest')
-data.setCell(6, 3, 9521);
+data.setCell(6, 1, 'editShippingAddressCheck6')
+data.setCell(6, 2, 'testing.MyAccountTest')
+data.setCell(6, 3, 10035);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'checkTotalAtCheckoutPage')
-data.setCell(7, 2, 'testing.HomePageTest')
-data.setCell(7, 3, 9380);
+data.setCell(7, 1, 'checkViewOrderLinkDetails3')
+data.setCell(7, 2, 'testing.MyAccountTest')
+data.setCell(7, 3, 9443);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'addToBasket')
-data.setCell(8, 2, 'testing.HomePageTest')
-data.setCell(8, 3, 9138);
+data.setCell(8, 1, 'calculateTaxRate11')
+data.setCell(8, 2, 'testing.ShopTest')
+data.setCell(8, 3, 9258);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'loginAuthentication8')
-data.setCell(9, 2, 'testing.LoginTest')
-data.setCell(9, 3, 9034);
+data.setCell(9, 1, 'checkViewOrderLink2')
+data.setCell(9, 2, 'testing.MyAccountTest')
+data.setCell(9, 3, 8851);
 data.setCell(10, 0, 10)
-data.setCell(10, 1, 'couponApplyLessThan450')
+data.setCell(10, 1, 'checkOutTitle')
 data.setCell(10, 2, 'testing.HomePageTest')
-data.setCell(10, 3, 8629);
+data.setCell(10, 3, 8667);
 data.setCell(11, 0, 11)
-data.setCell(11, 1, 'arrivalImageReview')
-data.setCell(11, 2, 'testing.HomePageTest')
-data.setCell(11, 3, 8162);
+data.setCell(11, 1, 'loginAuthentication8')
+data.setCell(11, 2, 'testing.LoginTest')
+data.setCell(11, 3, 8661);
 data.setCell(12, 0, 12)
 data.setCell(12, 1, 'couponApply')
 data.setCell(12, 2, 'testing.HomePageTest')
-data.setCell(12, 3, 8091);
+data.setCell(12, 3, 8162);
 data.setCell(13, 0, 13)
-data.setCell(13, 1, 'checkStatusDateDetails4')
-data.setCell(13, 2, 'testing.MyAccountTest')
-data.setCell(13, 3, 8007);
+data.setCell(13, 1, 'checkTotalAtCheckoutPage')
+data.setCell(13, 2, 'testing.HomePageTest')
+data.setCell(13, 3, 8156);
 data.setCell(14, 0, 14)
-data.setCell(14, 1, 'checkViewOrderLinkDetails3')
+data.setCell(14, 1, 'checkStatusDateDetails4')
 data.setCell(14, 2, 'testing.MyAccountTest')
-data.setCell(14, 3, 7980);
+data.setCell(14, 3, 7828);
 data.setCell(15, 0, 15)
-data.setCell(15, 1, 'checkViewOrderLink2')
-data.setCell(15, 2, 'testing.MyAccountTest')
-data.setCell(15, 3, 7627);
+data.setCell(15, 1, 'couponApplyLessThan450')
+data.setCell(15, 2, 'testing.HomePageTest')
+data.setCell(15, 3, 7724);
 data.setCell(16, 0, 16)
-data.setCell(16, 1, 'removeItem')
+data.setCell(16, 1, 'updatebasket')
 data.setCell(16, 2, 'testing.HomePageTest')
-data.setCell(16, 3, 7027);
+data.setCell(16, 3, 7564);
 data.setCell(17, 0, 17)
-data.setCell(17, 1, 'logoutCheck8')
-data.setCell(17, 2, 'testing.MyAccountTest')
-data.setCell(17, 3, 6526);
+data.setCell(17, 1, 'removeItem')
+data.setCell(17, 2, 'testing.HomePageTest')
+data.setCell(17, 3, 7301);
 data.setCell(18, 0, 18)
-data.setCell(18, 1, 'updatebasket')
-data.setCell(18, 2, 'testing.HomePageTest')
-data.setCell(18, 3, 6495);
+data.setCell(18, 1, 'logoutCheck8')
+data.setCell(18, 2, 'testing.MyAccountTest')
+data.setCell(18, 3, 6958);
 data.setCell(19, 0, 19)
 data.setCell(19, 1, 'addressFunctionalityCheck5')
 data.setCell(19, 2, 'testing.MyAccountTest')
-data.setCell(19, 3, 6435);
+data.setCell(19, 3, 6491);
 data.setCell(20, 0, 20)
 data.setCell(20, 1, 'checkOverLoadedOrder7')
 data.setCell(20, 2, 'testing.HomePageTest')
-data.setCell(20, 3, 5552);
+data.setCell(20, 3, 6407);
 data.setCell(21, 0, 21)
-data.setCell(21, 1, 'sortByDate5')
-data.setCell(21, 2, 'testing.ShopTest')
-data.setCell(21, 3, 5532);
+data.setCell(21, 1, 'accountDetailsFunctionCheck7')
+data.setCell(21, 2, 'testing.MyAccountTest')
+data.setCell(21, 3, 6215);
 data.setCell(22, 0, 22)
-data.setCell(22, 1, 'accountDetailsFunctionCheck7')
-data.setCell(22, 2, 'testing.MyAccountTest')
-data.setCell(22, 3, 5502);
+data.setCell(22, 1, 'sortByAverage4')
+data.setCell(22, 2, 'testing.ShopTest')
+data.setCell(22, 3, 6091);
 data.setCell(23, 0, 23)
-data.setCell(23, 1, 'saleFunctionality8')
-data.setCell(23, 2, 'testing.ShopTest')
-data.setCell(23, 3, 5356);
+data.setCell(23, 1, 'signInTest1')
+data.setCell(23, 2, 'testing.RegistrationTest')
+data.setCell(23, 3, 6000);
 data.setCell(24, 0, 24)
-data.setCell(24, 1, 'emptyEmailId3')
-data.setCell(24, 2, 'testing.RegistrationTest')
-data.setCell(24, 3, 5233);
+data.setCell(24, 1, 'sortByDate5')
+data.setCell(24, 2, 'testing.ShopTest')
+data.setCell(24, 3, 5780);
 data.setCell(25, 0, 25)
-data.setCell(25, 1, 'signInTest1')
-data.setCell(25, 2, 'testing.RegistrationTest')
-data.setCell(25, 3, 5213);
+data.setCell(25, 1, 'arrivalImageReview')
+data.setCell(25, 2, 'testing.HomePageTest')
+data.setCell(25, 3, 5523);
 data.setCell(26, 0, 26)
-data.setCell(26, 1, 'filterByPriceFinctionality1')
-data.setCell(26, 2, 'testing.ShopTest')
-data.setCell(26, 3, 5043);
+data.setCell(26, 1, 'registrationWithInvalidEmailAddress2')
+data.setCell(26, 2, 'testing.RegistrationTest')
+data.setCell(26, 3, 5342);
 data.setCell(27, 0, 27)
-data.setCell(27, 1, 'readMoreFunctionality7')
+data.setCell(27, 1, 'highToLow6')
 data.setCell(27, 2, 'testing.ShopTest')
-data.setCell(27, 3, 4967);
+data.setCell(27, 3, 5313);
 data.setCell(28, 0, 28)
-data.setCell(28, 1, 'validUserNameAndValidPassword1')
-data.setCell(28, 2, 'testing.LoginTest')
-data.setCell(28, 3, 4731);
+data.setCell(28, 1, 'saleFunctionality8')
+data.setCell(28, 2, 'testing.ShopTest')
+data.setCell(28, 3, 5277);
 data.setCell(29, 0, 29)
-data.setCell(29, 1, 'sortByAverage4')
+data.setCell(29, 1, 'readMoreFunctionality7')
 data.setCell(29, 2, 'testing.ShopTest')
-data.setCell(29, 3, 4676);
+data.setCell(29, 3, 4928);
 data.setCell(30, 0, 30)
-data.setCell(30, 1, 'registrationWithInvalidEmailAddress2')
-data.setCell(30, 2, 'testing.RegistrationTest')
-data.setCell(30, 3, 4644);
+data.setCell(30, 1, 'threeSlidersOnly1')
+data.setCell(30, 2, 'testing.HomePageTest')
+data.setCell(30, 3, 4888);
 data.setCell(31, 0, 31)
-data.setCell(31, 1, 'sortByPopularity3')
+data.setCell(31, 1, 'checkPriceRange2')
 data.setCell(31, 2, 'testing.ShopTest')
-data.setCell(31, 3, 4562);
+data.setCell(31, 3, 4877);
 data.setCell(32, 0, 32)
-data.setCell(32, 1, 'emptyPasswordAndEmptyUserName5')
-data.setCell(32, 2, 'testing.RegistrationTest')
-data.setCell(32, 3, 4539);
+data.setCell(32, 1, 'sortByPopularity3')
+data.setCell(32, 2, 'testing.ShopTest')
+data.setCell(32, 3, 4864);
 data.setCell(33, 0, 33)
-data.setCell(33, 1, 'highToLow6')
-data.setCell(33, 2, 'testing.ShopTest')
-data.setCell(33, 3, 4484);
+data.setCell(33, 1, 'validUserNameAndValidPassword1')
+data.setCell(33, 2, 'testing.LoginTest')
+data.setCell(33, 3, 4834);
 data.setCell(34, 0, 34)
-data.setCell(34, 1, 'checkPriceRange2')
+data.setCell(34, 1, 'filterByPriceFinctionality1')
 data.setCell(34, 2, 'testing.ShopTest')
-data.setCell(34, 3, 4410);
+data.setCell(34, 3, 4679);
 data.setCell(35, 0, 35)
-data.setCell(35, 1, 'checkDashboardLink1')
-data.setCell(35, 2, 'testing.MyAccountTest')
-data.setCell(35, 3, 4322);
+data.setCell(35, 1, 'emptyEmailId3')
+data.setCell(35, 2, 'testing.RegistrationTest')
+data.setCell(35, 3, 4650);
 data.setCell(36, 0, 36)
-data.setCell(36, 1, 'correctUserNameAndEmptyPassword3')
+data.setCell(36, 1, 'handlesCaseSensitive7')
 data.setCell(36, 2, 'testing.LoginTest')
-data.setCell(36, 3, 4319);
+data.setCell(36, 3, 4391);
 data.setCell(37, 0, 37)
-data.setCell(37, 1, 'emptyUserNameAndemptyPassword5')
+data.setCell(37, 1, 'incorrectUserNameAndIncorrectPassword2')
 data.setCell(37, 2, 'testing.LoginTest')
-data.setCell(37, 3, 4109);
+data.setCell(37, 3, 4190);
 data.setCell(38, 0, 38)
-data.setCell(38, 1, 'handlesCaseSensitive7')
+data.setCell(38, 1, 'emptyUserNameAndemptyPassword5')
 data.setCell(38, 2, 'testing.LoginTest')
-data.setCell(38, 3, 3980);
+data.setCell(38, 3, 4175);
 data.setCell(39, 0, 39)
-data.setCell(39, 1, 'emptyUserNameAndCorrectPassword4')
+data.setCell(39, 1, 'correctUserNameAndEmptyPassword3')
 data.setCell(39, 2, 'testing.LoginTest')
-data.setCell(39, 3, 3839);
+data.setCell(39, 3, 4115);
 data.setCell(40, 0, 40)
-data.setCell(40, 1, 'incorrectUserNameAndIncorrectPassword2')
+data.setCell(40, 1, 'emptyUserNameAndCorrectPassword4')
 data.setCell(40, 2, 'testing.LoginTest')
-data.setCell(40, 3, 3646);
+data.setCell(40, 3, 4095);
 data.setCell(41, 0, 41)
 data.setCell(41, 1, 'emptyPassword4')
 data.setCell(41, 2, 'testing.RegistrationTest')
-data.setCell(41, 3, 3598);
+data.setCell(41, 3, 3980);
 data.setCell(42, 0, 42)
-data.setCell(42, 1, 'threeSlidersOnly1')
-data.setCell(42, 2, 'testing.HomePageTest')
-data.setCell(42, 3, 3402);
+data.setCell(42, 1, 'checkDashboardLink1')
+data.setCell(42, 2, 'testing.MyAccountTest')
+data.setCell(42, 3, 3904);
 data.setCell(43, 0, 43)
-data.setCell(43, 1, 'passwordShouldBeMasked6')
-data.setCell(43, 2, 'testing.LoginTest')
-data.setCell(43, 3, 2270);
+data.setCell(43, 1, 'emptyPasswordAndEmptyUserName5')
+data.setCell(43, 2, 'testing.RegistrationTest')
+data.setCell(43, 3, 3812);
 data.setCell(44, 0, 44)
 data.setCell(44, 1, 'arrivalsImageDescription4')
 data.setCell(44, 2, 'testing.HomePageTest')
-data.setCell(44, 3, 1760);
+data.setCell(44, 3, 3107);
+data.setCell(45, 0, 45)
+data.setCell(45, 1, 'passwordShouldBeMasked6')
+data.setCell(45, 2, 'testing.LoginTest')
+data.setCell(45, 3, 2797);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
@@ -1460,551 +1554,563 @@ return data;
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">accountDetailsFunctionCheck7</span>
-                <span class="method-start">6511 ms</span>
+                <span class="method-start">5934 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeDriver</span>
-                <span class="method-start">12015 ms</span>
+                <span class="method-start">12151 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">getDriver</span>
-                <span class="method-start">12623 ms</span>
+                <span class="method-start">12831 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">addressFunctionalityCheck5</span>
-                <span class="method-start">18133 ms</span>
+                <span class="method-start">17839 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeDriver</span>
-                <span class="method-start">24569 ms</span>
+                <span class="method-start">24331 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">getDriver</span>
-                <span class="method-start">25188 ms</span>
+                <span class="method-start">25172 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">checkDashboardLink1</span>
-                <span class="method-start">30054 ms</span>
+                <span class="method-start">30075 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeDriver</span>
-                <span class="method-start">34376 ms</span>
+                <span class="method-start">33979 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">getDriver</span>
-                <span class="method-start">35064 ms</span>
+                <span class="method-start">34596 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">checkStatusDateDetails4</span>
-                <span class="method-start">40199 ms</span>
+                <span class="method-start">39577 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeDriver</span>
-                <span class="method-start">48206 ms</span>
+                <span class="method-start">47406 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">getDriver</span>
-                <span class="method-start">48873 ms</span>
+                <span class="method-start">48080 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">checkViewOrderLink2</span>
-                <span class="method-start">53938 ms</span>
+                <span class="method-start">54427 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeDriver</span>
-                <span class="method-start">61565 ms</span>
+                <span class="method-start">63279 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">getDriver</span>
-                <span class="method-start">62217 ms</span>
+                <span class="method-start">65616 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">checkViewOrderLinkDetails3</span>
-                <span class="method-start">67611 ms</span>
+                <span class="method-start">72777 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeDriver</span>
-                <span class="method-start">75592 ms</span>
+                <span class="method-start">82221 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">getDriver</span>
-                <span class="method-start">76401 ms</span>
+                <span class="method-start">84205 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">editShippingAddressCheck6</span>
-                <span class="method-start">81608 ms</span>
+                <span class="method-start">91427 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeDriver</span>
-                <span class="method-start">101667 ms</span>
+                <span class="method-start">101463 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">getDriver</span>
-                <span class="method-start">102326 ms</span>
+                <span class="method-start">102616 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">logoutCheck8</span>
-                <span class="method-start">107228 ms</span>
+                <span class="method-start">110002 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeDriver</span>
-                <span class="method-start">113755 ms</span>
+                <span class="method-start">116961 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testing.HomePageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">getDriver</span>
-                <span class="method-start">114457 ms</span>
+                <span class="method-start">117584 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">addToBasket</span>
-                <span class="method-start">119572 ms</span>
+                <span class="method-start">122537 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeDriver</span>
-                <span class="method-start">128711 ms</span>
+                <span class="method-start">138423 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">getDriver</span>
-                <span class="method-start">129460 ms</span>
+                <span class="method-start">139152 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">arrivalImageReview</span>
-                <span class="method-start">134286 ms</span>
+                <span class="method-start">143859 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeDriver</span>
-                <span class="method-start">142448 ms</span>
+                <span class="method-start">149382 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">getDriver</span>
-                <span class="method-start">143088 ms</span>
+                <span class="method-start">150011 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">arrivalsImageDescription4</span>
-                <span class="method-start">148050 ms</span>
+                <span class="method-start">154870 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeDriver</span>
-                <span class="method-start">149811 ms</span>
+                <span class="method-start">157978 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">getDriver</span>
-                <span class="method-start">150399 ms</span>
+                <span class="method-start">158611 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">arrivalsShouldNavigate3</span>
-                <span class="method-start">155290 ms</span>
+                <span class="method-start">163657 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeDriver</span>
-                <span class="method-start">165916 ms</span>
+                <span class="method-start">175880 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">getDriver</span>
-                <span class="method-start">166832 ms</span>
+                <span class="method-start">176593 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">checkOutTitle</span>
-                <span class="method-start">171679 ms</span>
+                <span class="method-start">181264 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeDriver</span>
-                <span class="method-start">181252 ms</span>
+                <span class="method-start">189932 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">getDriver</span>
-                <span class="method-start">181936 ms</span>
+                <span class="method-start">190548 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">checkOverLoadedOrder7</span>
-                <span class="method-start">187141 ms</span>
+                <span class="method-start">195357 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeDriver</span>
-                <span class="method-start">192693 ms</span>
+                <span class="method-start">201764 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">getDriver</span>
-                <span class="method-start">193326 ms</span>
+                <span class="method-start">202426 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">checkTotalAtCheckoutPage</span>
-                <span class="method-start">198701 ms</span>
+                <span class="method-start">207227 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeDriver</span>
-                <span class="method-start">208081 ms</span>
+                <span class="method-start">215383 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">getDriver</span>
-                <span class="method-start">208722 ms</span>
+                <span class="method-start">216143 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">couponApply</span>
-                <span class="method-start">213836 ms</span>
+                <span class="method-start">221514 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeDriver</span>
-                <span class="method-start">221928 ms</span>
+                <span class="method-start">229677 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">getDriver</span>
-                <span class="method-start">222655 ms</span>
+                <span class="method-start">230350 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">couponApplyLessThan450</span>
-                <span class="method-start">228013 ms</span>
+                <span class="method-start">235199 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeDriver</span>
-                <span class="method-start">236642 ms</span>
+                <span class="method-start">242923 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">getDriver</span>
-                <span class="method-start">237296 ms</span>
+                <span class="method-start">243742 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">removeItem</span>
-                <span class="method-start">242251 ms</span>
+                <span class="method-start">248491 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeDriver</span>
-                <span class="method-start">249278 ms</span>
+                <span class="method-start">255792 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">getDriver</span>
-                <span class="method-start">250997 ms</span>
+                <span class="method-start">256438 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">threeArrivalsOnly2</span>
-                <span class="method-start">258161 ms</span>
+                <span class="method-start">261485 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeDriver</span>
-                <span class="method-start">278389 ms</span>
+                <span class="method-start">281698 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">getDriver</span>
-                <span class="method-start">279091 ms</span>
+                <span class="method-start">282442 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">threeSlidersOnly1</span>
-                <span class="method-start">284668 ms</span>
+                <span class="method-start">287738 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeDriver</span>
-                <span class="method-start">288070 ms</span>
+                <span class="method-start">292627 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">getDriver</span>
-                <span class="method-start">288684 ms</span>
+                <span class="method-start">293272 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">updatebasket</span>
-                <span class="method-start">293806 ms</span>
+                <span class="method-start">298134 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeDriver</span>
-                <span class="method-start">300301 ms</span>
+                <span class="method-start">305699 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testing.LoginTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">getDriver</span>
-                <span class="method-start">300945 ms</span>
+                <span class="method-start">306335 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">correctUserNameAndEmptyPassword3</span>
-                <span class="method-start">305981 ms</span>
+                <span class="method-start">311221 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeDriver</span>
-                <span class="method-start">310300 ms</span>
+                <span class="method-start">315336 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">getDriver</span>
-                <span class="method-start">310982 ms</span>
+                <span class="method-start">315989 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">emptyUserNameAndCorrectPassword4</span>
-                <span class="method-start">318891 ms</span>
+                <span class="method-start">320848 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeDriver</span>
-                <span class="method-start">322731 ms</span>
+                <span class="method-start">324943 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">getDriver</span>
-                <span class="method-start">323422 ms</span>
+                <span class="method-start">325738 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">emptyUserNameAndemptyPassword5</span>
-                <span class="method-start">328324 ms</span>
+                <span class="method-start">330403 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeDriver</span>
-                <span class="method-start">332433 ms</span>
+                <span class="method-start">334579 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">getDriver</span>
-                <span class="method-start">333121 ms</span>
+                <span class="method-start">335223 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">handlesCaseSensitive7</span>
-                <span class="method-start">337759 ms</span>
+                <span class="method-start">339993 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeDriver</span>
-                <span class="method-start">341739 ms</span>
+                <span class="method-start">344384 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">getDriver</span>
-                <span class="method-start">342359 ms</span>
+                <span class="method-start">345041 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">incorrectUserNameAndIncorrectPassword2</span>
-                <span class="method-start">347904 ms</span>
+                <span class="method-start">349797 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeDriver</span>
-                <span class="method-start">351550 ms</span>
+                <span class="method-start">353987 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">getDriver</span>
-                <span class="method-start">352190 ms</span>
+                <span class="method-start">354637 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">loginAuthentication8</span>
-                <span class="method-start">357771 ms</span>
+                <span class="method-start">359837 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeDriver</span>
-                <span class="method-start">366805 ms</span>
+                <span class="method-start">368498 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">getDriver</span>
-                <span class="method-start">367450 ms</span>
+                <span class="method-start">369205 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">passwordShouldBeMasked6</span>
-                <span class="method-start">372490 ms</span>
+                <span class="method-start">374418 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeDriver</span>
-                <span class="method-start">374760 ms</span>
+                <span class="method-start">377216 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">getDriver</span>
-                <span class="method-start">375354 ms</span>
+                <span class="method-start">377878 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">validUserNameAndValidPassword1</span>
-                <span class="method-start">380894 ms</span>
+                <span class="method-start">382653 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeDriver</span>
-                <span class="method-start">385626 ms</span>
+                <span class="method-start">387487 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testing.RegistrationTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">getDriver</span>
-                <span class="method-start">386248 ms</span>
+                <span class="method-start">388131 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">emptyEmailId3</span>
-                <span class="method-start">391360 ms</span>
+                <span class="method-start">395690 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeDriver</span>
-                <span class="method-start">396593 ms</span>
+                <span class="method-start">400341 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">getDriver</span>
-                <span class="method-start">397253 ms</span>
+                <span class="method-start">401022 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">emptyPassword4</span>
-                <span class="method-start">402741 ms</span>
+                <span class="method-start">405834 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeDriver</span>
-                <span class="method-start">406339 ms</span>
+                <span class="method-start">409814 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">getDriver</span>
-                <span class="method-start">406944 ms</span>
+                <span class="method-start">410559 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">emptyPasswordAndEmptyUserName5</span>
-                <span class="method-start">412628 ms</span>
+                <span class="method-start">415444 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeDriver</span>
-                <span class="method-start">417168 ms</span>
+                <span class="method-start">419257 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">getDriver</span>
-                <span class="method-start">417745 ms</span>
+                <span class="method-start">419890 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">registrationWithInvalidEmailAddress2</span>
-                <span class="method-start">422833 ms</span>
+                <span class="method-start">424629 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeDriver</span>
-                <span class="method-start">427477 ms</span>
+                <span class="method-start">429972 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">getDriver</span>
-                <span class="method-start">428123 ms</span>
+                <span class="method-start">430659 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">signInTest1</span>
-                <span class="method-start">433084 ms</span>
+                <span class="method-start">435690 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeDriver</span>
-                <span class="method-start">438298 ms</span>
+                <span class="method-start">441691 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testing.ShopTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">getDriver</span>
-                <span class="method-start">438954 ms</span>
+                <span class="method-start">442332 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">baskedFunctionality9</span>
-                <span class="method-start">444132 ms</span>
+                <span class="method-start">448084 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeDriver</span>
-                <span class="method-start">458681 ms</span>
+                <span class="method-start">462722 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">getDriver</span>
-                <span class="method-start">460327 ms</span>
+                <span class="method-start">463397 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">calculateTaxRate11</span>
-                <span class="method-start">467838 ms</span>
+                <span class="method-start">468466 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeDriver</span>
-                <span class="method-start">477360 ms</span>
+                <span class="method-start">477724 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">getDriver</span>
-                <span class="method-start">478721 ms</span>
+                <span class="method-start">478379 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">checkPriceRange2</span>
-                <span class="method-start">484949 ms</span>
+                <span class="method-start">483776 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeDriver</span>
-                <span class="method-start">489360 ms</span>
+                <span class="method-start">488653 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">getDriver</span>
-                <span class="method-start">490018 ms</span>
+                <span class="method-start">489319 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">filterByPriceFinctionality1</span>
-                <span class="method-start">494990 ms</span>
+                <span class="method-start">494503 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeDriver</span>
-                <span class="method-start">500034 ms</span>
+                <span class="method-start">499182 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">getDriver</span>
-                <span class="method-start">500752 ms</span>
+                <span class="method-start">499965 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">highToLow6</span>
-                <span class="method-start">505875 ms</span>
+                <span class="method-start">505486 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeDriver</span>
-                <span class="method-start">510360 ms</span>
+                <span class="method-start">510799 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">getDriver</span>
-                <span class="method-start">510999 ms</span>
+                <span class="method-start">511489 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">orderConfirmation10</span>
-                <span class="method-start">515968 ms</span>
+                <span class="method-start">516220 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeDriver</span>
-                <span class="method-start">532265 ms</span>
+                <span class="method-start">534030 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">getDriver</span>
-                <span class="method-start">532968 ms</span>
+                <span class="method-start">534715 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">readMoreFunctionality7</span>
-                <span class="method-start">537869 ms</span>
+                <span class="method-start">539794 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeDriver</span>
-                <span class="method-start">542836 ms</span>
+                <span class="method-start">544723 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">getDriver</span>
-                <span class="method-start">543456 ms</span>
+                <span class="method-start">545318 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">saleFunctionality8</span>
-                <span class="method-start">548352 ms</span>
+                <span class="method-start">565491 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeDriver</span>
-                <span class="method-start">553708 ms</span>
+                <span class="method-start">577941 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">getDriver</span>
-                <span class="method-start">554441 ms</span>
+                <span class="method-start">578563 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">saleFunctionality8</span>
+                <span class="method-start">583606 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeDriver</span>
+                <span class="method-start">588883 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">getDriver</span>
+                <span class="method-start">589660 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">sortByAverage4</span>
-                <span class="method-start">560599 ms</span>
+                <span class="method-start">594862 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeDriver</span>
-                <span class="method-start">565276 ms</span>
+                <span class="method-start">600954 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">getDriver</span>
-                <span class="method-start">565959 ms</span>
+                <span class="method-start">601607 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">sortByDate5</span>
-                <span class="method-start">570888 ms</span>
+                <span class="method-start">609218 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeDriver</span>
-                <span class="method-start">576421 ms</span>
+                <span class="method-start">614998 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">getDriver</span>
-                <span class="method-start">577046 ms</span>
+                <span class="method-start">615682 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">sortByPopularity3</span>
-                <span class="method-start">582095 ms</span>
+                <span class="method-start">620819 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeDriver</span>
-                <span class="method-start">586658 ms</span>
+                <span class="method-start">625683 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
