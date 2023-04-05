@@ -35,7 +35,7 @@
 				<configuration>
 					<testFailureIgnore>true</testFailureIgnore>
 					<suiteXmlFiles>
-						<suiteXmlFile>testng.xml</suiteXmlFile>
+						<suiteXmlFile>all.xml</suiteXmlFile>
 					</suiteXmlFiles>
 				</configuration>
 			</plugin>
