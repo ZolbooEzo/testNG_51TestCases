@@ -1,5 +1,6 @@
 package testing;
 
+import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -53,6 +54,7 @@ public class LoginTest extends CommonMethods{
 	
 	@Test(groups = {"login", "all", "login8"}, retryAnalyzer = ZRetryAnalyzer.class)
 	public void loginAuthentication8() {
+		BaseClass.getDriver().findElement(By.xpath("123")).click();
 		map.doLogin(true);
 		navigateBack();
 		if(BaseClass.getProperty("browser").equals("firefox")) {
